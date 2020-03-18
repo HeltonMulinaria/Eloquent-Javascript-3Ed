@@ -52,3 +52,5 @@ Licenciado sob a licença [Creative Commons attribution-noncommercial](http://cr
 Todo código neste livro também pode ser considerado sob a [licença MIT](http://opensource.org/licenses/MIT).
 
 Este projeto é inspirado no Projeto do [BrasilJS](https://github.com/braziljs) que traduziu a segunda edição deste livro.
+Como não sei inglês fiz a tradução através do Google Translator, alguns termos técnicos e jargões que conheço eu mantive em inglês. Sendo assim peço a ajuda de quem puder e quiser na tradução e revisão da tradução deste livro.
+Grande Abraço.
