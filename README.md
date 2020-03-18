@@ -4,6 +4,8 @@ Tradução para o Português do livro Eloquent Javascrpt 3ªEdição do Marijn H
 
 ## Conteúdo do Livro
 
+![Capa](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/coverPtBr.png)
+
 Introdução
 
 1. Valores, tipos e operadores
