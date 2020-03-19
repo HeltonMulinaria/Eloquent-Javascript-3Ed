@@ -5,7 +5,7 @@
 >
 > *—Taoz Te Ching Laozi*
 
-![Imagem de dois corvos em um galho](https://eloquentjavascript.net/img/chapter_picture_11.jpg)
+![Imagem de dois corvos em um galho](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_11.jpg)
 
 A parte central de um computador, a parte que executa as etapas individuais que compõem nossos programas, é chamada de *processador* . Os programas que vimos até agora são coisas que manterão o processador ocupado até que eles terminem seu trabalho. A velocidade na qual algo como um loop que manipula números pode ser executado depende praticamente da velocidade do processador.
 
@@ -27,7 +27,7 @@ A solução para esse problema, em um sistema síncrono, é iniciar threads de c
 
 No diagrama a seguir, as linhas grossas representam o tempo que o programa gasta executando normalmente e as linhas finas representam o tempo gasto aguardando a rede. No modelo síncrono, o tempo gasto pela rede faz *parte* da linha do tempo de um determinado encadeamento de controle. No modelo assíncrono, iniciar uma ação de rede conceitualmente causa uma *divisão* na linha do tempo. O programa que iniciou a ação continua em execução e a ação acontece ao lado, notificando o programa quando é concluído.
 
-![Fluxo de controle para programação síncrona e assíncrona](https://eloquentjavascript.net/img/control-io.svg)
+![Fluxo de controle para programação síncrona e assíncrona](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/control-io.svg)
 
 Outra maneira de descrever a diferença é que a espera pela conclusão das ações está *implícita* no modelo síncrono, enquanto *explícita* , sob nosso controle, no assíncrono.
 
@@ -49,7 +49,7 @@ Para se comunicar com outros dispositivos, essas máquinas usam sinais de luz. O
 
 Nosso amigo, o especialista em corvid, mapeou a rede de ninhos de corvos na vila de Hières-sur-Amby, às margens do rio Ródano. Este mapa mostra os ninhos e suas conexões:
 
-![Uma rede de ninhos de corvos em uma pequena vila](https://eloquentjavascript.net/img/Hieres-sur-Amby.png)
+![Uma rede de ninhos de corvos em uma pequena vila](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/Hieres-sur-Amby.png)
 
 Em um exemplo surpreendente de evolução convergente, os computadores crow executam JavaScript. Neste capítulo, escreveremos algumas funções básicas de rede para eles.
 
