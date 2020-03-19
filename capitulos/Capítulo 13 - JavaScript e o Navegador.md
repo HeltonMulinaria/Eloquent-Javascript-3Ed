@@ -4,7 +4,7 @@
 >
 > *—Tim Berners-Lee, A World Wide Web: Uma história pessoal muito curta*
 
-![Imagem de uma central telefônica](https://eloquentjavascript.net/img/chapter_picture_13.jpg)
+![Imagem de uma central telefônica](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_13.jpg)
 
 Os próximos capítulos deste livro falarão sobre navegadores da web. Sem navegadores da web, não haveria JavaScript. Ou mesmo se houvesse, ninguém teria prestado atenção a isso.
 
