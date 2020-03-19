@@ -4,7 +4,7 @@
 >
 > *—Charles Babbage, passagens da vida de um filósofo (1864)*
 
-![Imagem de um homem-esquilo](https://eloquentjavascript.net/img/chapter_picture_4.jpg)
+![Imagem de um homem-esquilo](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_4.jpg)
 
 Números, booleanos e strings são os átomos dos quais as estruturas de dados são construídas. Muitos tipos de informações requerem mais de um átomo. *Objetos* nos permitem agrupar valores - incluindo outros objetos - para construir estruturas mais complexas.
 
@@ -264,7 +264,7 @@ Para calcular a medida de correlação entre duas variáveis booleanas, podemos 
 
 Poderíamos pegar o evento de comer pizza e colocá-lo em uma tabela de frequências como essa, em que cada número indica a quantidade de vezes que a combinação ocorreu em nossas medições:
 
-![Comer pizza versus se transformar em um esquilo](https://eloquentjavascript.net/img/pizza-squirrel.svg)
+![Comer pizza versus se transformar em um esquilo](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/pizza-squirrel.svg)
 
 Se chamarmos essa tabela *n* , podemos calcular *ϕ* usando a seguinte fórmula:
 
