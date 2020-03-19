@@ -4,7 +4,7 @@
 >
 > *—Roy Fielding, estilos arquitetônicos e design de arquiteturas de software baseadas em rede*
 
-![Imagem de um formulário da Web em um pergaminho medieval](https://eloquentjavascript.net/img/chapter_picture_18.jpg)
+![Imagem de um formulário da Web em um pergaminho medieval](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_18.jpg)
 
 O *Hypertext Transfer Protocol* , já mencionado no [Capítulo 13](https://eloquentjavascript.net/13_browser.html#web) , é o mecanismo pelo qual os dados são solicitados e fornecidos na World Wide Web. Este capítulo descreve o protocolo com mais detalhes e explica como o JavaScript do navegador tem acesso a ele.
 
