@@ -4,7 +4,7 @@
 >
 > *—Mestre Yuan-Ma, O Livro de Programação*
 
-![Imagem de um mar de bits](https://eloquentjavascript.net/img/chapter_picture_1.jpg)
+![Imagem de um mar de bits](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_1.jpg)
 
 Dentro do mundo do computador, existem apenas dados. Você pode ler dados, modificar dados, criar novos dados - mas o que não é um dado não pode ser mencionado. Todos esses dados são armazenados como longas sequências de bits e, portanto, são fundamentalmente semelhantes.
 
