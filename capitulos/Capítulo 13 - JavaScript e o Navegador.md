@@ -28,9 +28,9 @@ Por exemplo, o HTTP ( *Hypertext Transfer Protocol* ) é um protocolo para recup
 GET /index.html HTTP / 1.1
 ```
 
-Há muito mais regras sobre como o solicitante pode incluir mais informações na solicitação e como o outro lado, que retorna o recurso, empacota seu conteúdo. Veremos o HTTP com mais detalhes no [Capítulo 18](https://eloquentjavascript.net/18_http.html) .
+Há muito mais regras sobre como o solicitante pode incluir mais informações na solicitação e como o outro lado, que retorna o recurso, empacota seu conteúdo. Veremos o HTTP com mais detalhes no [Capítulo 18](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2018%20-%20%20HTTP%20e%20formul%C3%A1rios.md) .
 
-A maioria dos protocolos é construída sobre outros protocolos. O HTTP trata a rede como um dispositivo semelhante a um fluxo no qual você pode inserir bits e fazer com que eles cheguem ao destino correto na ordem correta. Como vimos no [Capítulo 11](https://eloquentjavascript.net/11_async.html) , garantir essas coisas já é um problema bastante difícil.
+A maioria dos protocolos é construída sobre outros protocolos. O HTTP trata a rede como um dispositivo semelhante a um fluxo no qual você pode inserir bits e fazer com que eles cheguem ao destino correto na ordem correta. Como vimos no [Capítulo 11](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2011%20-%20Programa%C3%A7%C3%A3o%20ass%C3%ADncrona.md) , garantir essas coisas já é um problema bastante difícil.
 
 O TCP ( *Transmission Control Protocol* ) é um protocolo que resolve esse problema. Todos os dispositivos conectados à Internet "falam" e a maior parte da comunicação na Internet é construída sobre ela.
 
@@ -164,7 +164,7 @@ De vez em quando, alguém cria uma nova maneira de contornar as limitações de 
 
 ## Compatibilidade e guerra de navegadores
 
-Nos estágios iniciais da Web, um navegador chamado Mosaic dominava o mercado. Depois de alguns anos, o saldo passou para o Netscape, que, por sua vez, foi amplamente substituído pelo Internet Explorer da Microsoft. Em qualquer ponto em que um único navegador fosse dominante, o fornecedor desse navegador teria o direito de inventar unilateralmente novos recursos para a Web. Como a maioria dos usuários usava o navegador mais popular, os sites simplesmente começavam a usar esses recursos - não importa os outros navegadores.
+Nos estágios iniciais da Web, um navegador chamado Mosaic dominava o mercado. Depois de alguns anos, o saldo passou para o Netscape, que, por sua vez, foi amplamente substituído pelo Internet Explorer da Microsoft. Em qualquer ponto em que um único navegador fosse dominante, o fornecedor desse navegador teria o direito de inventar unilateralmente novos recursos para a Web. Como a maioria dos usuários usava o navegador mais popular, os sites simplesmente começavam a usar esses recursos - não importa os outros navegadores.	
 
 Essa era a idade das trevas da compatibilidade, geralmente chamada de *guerra* dos *navegadores* . Os desenvolvedores da Web ficaram com não uma Web unificada, mas duas ou três plataformas incompatíveis. Para piorar as coisas, os navegadores em uso por volta de 2003 estavam cheios de bugs e, é claro, os bugs eram diferentes para cada navegador. A vida era difícil para as pessoas que escreviam páginas da web.
 
