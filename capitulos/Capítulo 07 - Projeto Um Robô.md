@@ -4,7 +4,7 @@
 >
 > *—Edsger Dijkstra, As ameaças à ciência da computação*
 
-![Imagem de um robô de entrega de pacotes](https://eloquentjavascript.net/img/chapter_picture_7.jpg)
+![Imagem de um robô de entrega de pacotes](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_7.jpg)
 
 Nos capítulos de "projeto", pararei de abordar você com uma nova teoria por um breve momento e, em vez disso, trabalharemos juntos em um programa. A teoria é necessária para aprender a programar, mas a leitura e a compreensão dos programas reais são igualmente importantes.
 
@@ -26,7 +26,7 @@ const roads = [
 ];
 ```
 
-![A aldeia de Meadowfield](https://eloquentjavascript.net/img/village2x.png)
+![A aldeia de Meadowfield](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/village2x.png)
 
 A rede de estradas da vila forma um *gráfico* . Um gráfico é uma coleção de pontos (lugares da vila) com linhas entre eles (estradas). Este gráfico será o mundo pelo qual nosso robô se moverá.
 
