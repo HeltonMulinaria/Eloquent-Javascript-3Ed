@@ -4,7 +4,7 @@
 >
 > *—Donald Knuth*
 
-![Imagem de folhas de samambaia com forma de fractal](https://eloquentjavascript.net/img/chapter_picture_3.jpg)
+![Imagem de folhas de samambaia com forma de fractal](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_3.jpg)
 
 As funções são o pão com manteiga da programação JavaScript. O conceito de agrupar um pedaço de programa em um valor tem muitos usos. Ele nos fornece uma maneira de estruturar programas maiores, reduzir a repetição, associar nomes a subprogramas e isolar esses subprogramas um do outro.
 
