@@ -4,7 +4,7 @@
 >
 > *—Friedrich Nietzsche, além do bem e do mal*
 
-![Imagem de uma árvore com letras e scripts pendurados em seus galhos](https://eloquentjavascript.net/img/chapter_picture_14.jpg)
+![Imagem de uma árvore com letras e scripts pendurados em seus galhos](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_14.jpg)
 
 Quando você abre uma página da web em seu navegador, o navegador recupera o texto HTML da página e o analisa, da mesma forma que nosso analisador do [Capítulo 12](https://eloquentjavascript.net/12_language.html#parsing) analisou os programas. O navegador cria um modelo da estrutura do documento e usa esse modelo para desenhar a página na tela.
 
@@ -31,7 +31,7 @@ Você pode imaginar um documento HTML como um conjunto aninhado de caixas. Tags 
 
 Esta página possui a seguinte estrutura:
 
-![Documento HTML como caixas aninhadas](https://eloquentjavascript.net/img/html-boxes.svg)
+![Documento HTML como caixas aninhadas](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/html-boxes.svg)
 
 A estrutura de dados que o navegador usa para representar o documento segue esta forma. Para cada caixa, há um objeto com o qual podemos interagir para descobrir coisas como qual tag HTML representa e quais caixas e texto ele contém. Essa representação é chamada de *Document Object Model* , ou DOM, para abreviar.
 
@@ -53,7 +53,7 @@ Cada objeto do nó DOM possui uma `nodeType`propriedade, que contém um código 
 
 Outra maneira de visualizar nossa árvore de documentos é a seguinte:
 
-![Documento HTML como uma árvore](https://eloquentjavascript.net/img/html-tree.svg)
+![Documento HTML como uma árvore](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/html-tree.svg)
 
 As folhas são nós de texto e as setas indicam relacionamentos pai-filho entre nós.
 
@@ -73,7 +73,7 @@ Mas essas falhas não são fatais. Como o JavaScript nos permite criar nossas pr
 
 Nós DOM contêm diversos links para outros nós próximos. O diagrama a seguir ilustra estes:
 
-![Links entre nós DOM](https://eloquentjavascript.net/img/html-links.svg)
+![Links entre nós DOM](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/html-links.svg)
 
 Embora o diagrama mostre apenas um link de cada tipo, cada nó tem uma `parentNode`propriedade que aponta para o nó do qual faz parte, se houver. Da mesma forma, todo nó do elemento (tipo 1 do nó) possui uma `childNodes`propriedade que aponta para um objeto semelhante a uma matriz que contém seus filhos.
 
@@ -453,7 +453,7 @@ A movimentação em círculos é feita usando as funções trigonométricas `Mat
 
 Essa unidade para medir ângulos é chamada radianos - um círculo completo é 2π radianos, semelhante a 360 graus ao medir em graus. A constante π está disponível como `Math.PI`no JavaScript.
 
-![Usando cosseno e seno para calcular coordenadas](https://eloquentjavascript.net/img/cos_sin.svg)
+![Usando cosseno e seno para calcular coordenadas](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/cos_sin.svg)
 
 O código de animação cat mantém um contador, `angle`para o ângulo atual da animação e o incrementa toda vez que a `animate`função é chamada. Em seguida, ele pode usar esse ângulo para calcular a posição atual do elemento de imagem. O `top`estilo é calculado `Math.sin`e multiplicado por 20, que é o raio vertical da nossa elipse. O `left`estilo é baseado `Math.cos`e multiplicado por 200 para que a elipse seja muito mais larga do que alta.
 
