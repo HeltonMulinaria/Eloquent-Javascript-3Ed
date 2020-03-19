@@ -8,7 +8,7 @@
 >
 > *—CAR Hoare, 1980 Palestra do Prêmio ACM Turing*
 
-![Cartas de diferentes scripts](https://eloquentjavascript.net/img/chapter_picture_5.jpg)
+![Cartas de diferentes scripts](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_5.jpg)
 
 Um programa grande é um programa caro, e não apenas pelo tempo que leva para construir. Tamanho quase sempre envolve complexidade, e complexidade confunde os programadores. Programadores confusos, por sua vez, introduzem erros ( *bugs* ) nos programas. Um programa grande oferece muito espaço para ocultar esses bugs, dificultando sua localização.
 
@@ -170,7 +170,7 @@ Você se lembra do Unicode do [capítulo 1](https://eloquentjavascript.net/01_va
 
 Embora eu possa ler fluentemente apenas caracteres latinos, aprecio o fato de as pessoas estarem escrevendo textos em pelo menos 80 outros sistemas de escrita, muitos dos quais eu nem reconheceria. Por exemplo, aqui está uma amostra da caligrafia tâmil:
 
-![Caligrafia tâmil](https://eloquentjavascript.net/img/tamil.png)
+![Caligrafia tâmil](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/tamil.png)
 
 O conjunto de dados de exemplo contém algumas informações sobre os 140 scripts definidos no Unicode. Está disponível na [sandbox de codificação](https://eloquentjavascript.net/code#5) deste capítulo como `SCRIPTS`encadernação. A ligação contém uma matriz de objetos, cada um dos quais descreve um script.
 
