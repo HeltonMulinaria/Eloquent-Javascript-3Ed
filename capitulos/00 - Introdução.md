@@ -4,7 +4,7 @@
 >
 > *—Ellen Ullman, Perto da Máquina: Tecnofilia e seus descontentamentos*
 
-![Imagem de uma chave de fenda e uma placa de circuito](https://eloquentjavascript.net/img/chapter_picture_00.jpg)
+![Imagem de uma chave de fenda e uma placa de circuito](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_00.jpg)
 
 Este é um livro sobre como instruir computadores. Atualmente, os computadores são tão comuns quanto as chaves de fenda, mas são um pouco mais complexos, e fazê-los fazer o que você quer que eles façam nem sempre é fácil.
 
