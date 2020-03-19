@@ -4,7 +4,7 @@
 >
 > *—_why, Why's (Poignant) Guia de Ruby*
 
-![Imagem de tentáculos segurando objetos](https://eloquentjavascript.net/img/chapter_picture_2.jpg)
+![Imagem de tentáculos segurando objetos](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_2.jpg)
 
 Neste capítulo, começaremos a fazer coisas que realmente podem ser chamadas de *programação* . Expandiremos nosso comando da linguagem JavaScript além dos substantivos e fragmentos de frases que vimos até agora, a ponto de expressar uma prosa significativa.
 
@@ -174,13 +174,13 @@ A função `Number`converte um valor em um número. Precisamos dessa conversão 
 
 Aqui está a representação esquemática trivial do fluxo de controle linear:
 
-![Fluxo de controle trivial](https://eloquentjavascript.net/img/controlflow-straight.svg)
+![Fluxo de controle trivial](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/controlflow-straight.svg)
 
 ## Execução condicional
 
 Nem todos os programas são estradas retas. Por exemplo, podemos criar uma estrada de ramificação, onde o programa leva a ramificação apropriada com base na situação em questão. Isso é chamado de *execução condicional* .
 
-![Fluxo de controle condicional](https://eloquentjavascript.net/img//controlflow-if.svg)
+![Fluxo de controle condicional](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/controlflow-if.svg))
 
 A execução condicional é criada com a `if`palavra - chave em JavaScript. No caso simples, queremos que algum código seja executado se, e somente se, uma determinada condição for mantida. Podemos, por exemplo, querer mostrar o quadrado da entrada apenas se a entrada for realmente um número.
 
@@ -235,7 +235,7 @@ O programa primeiro verificará se `num`é menor que 10. Se for, escolhe essa ra
 
 O esquema para este programa é mais ou menos assim:
 
-![Aninhado se o fluxo de controle](https://eloquentjavascript.net/img/controlflow-nested-if.svg)
+![Aninhado se o fluxo de controle](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/controlflow-nested-if.svg)
 
 ## enquanto e fazer loops
 
@@ -253,7 +253,7 @@ console.log(12);
 
 Isso funciona, mas a idéia de escrever um programa é fazer com que algo *menos* funcione, não mais. Se precisássemos de todos os números pares menores que 1.000, essa abordagem seria impraticável. O que precisamos é de uma maneira de executar um pedaço de código várias vezes. Essa forma de fluxo de controle é chamada de *loop* .
 
-![Fluxo de controle de loop](https://eloquentjavascript.net/img/controlflow-loop.svg)
+![Fluxo de controle de loop](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/controlflow-loop.svg)
 
 O fluxo de controle em loop permite voltar a algum ponto do programa em que estávamos antes e repeti-lo com o estado atual do programa. Se combinarmos isso com uma ligação que conta, podemos fazer algo assim:
 
