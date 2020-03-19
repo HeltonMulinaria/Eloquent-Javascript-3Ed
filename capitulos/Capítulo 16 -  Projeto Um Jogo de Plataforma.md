@@ -4,7 +4,7 @@
 >
 > *—Iain Banks, o jogador dos jogos*
 
-![Imagem de um personagem do jogo pulando sobre lava](https://eloquentjavascript.net/img/chapter_picture_16.jpg)
+![Imagem de um personagem do jogo pulando sobre lava](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_16.jpg)
 
 Grande parte do meu fascínio inicial por computadores, como o de muitas crianças nerds, tinha a ver com jogos de computador. Fui atraído pelos minúsculos mundos simulados que eu poderia manipular e em que histórias (meio que) se desenrolaram - suponho mais, por causa da maneira como projetei minha imaginação neles do que por causa das possibilidades que elas realmente ofereciam.
 
@@ -16,7 +16,7 @@ Este capítulo mostrará a implementação de um pequeno jogo de plataforma. Jog
 
 Nosso jogo será basicamente baseado em [Dark Blue,](http://www.lessmilk.com/games/10) de Thomas Palef. Eu escolhi esse jogo porque é divertido e minimalista e porque pode ser construído sem muito código. Se parece com isso:
 
-![O jogo Dark Blue](https://eloquentjavascript.net/img/darkblue.png)
+![O jogo Dark Blue](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/darkblue.png)
 
 A caixa escura representa o jogador, cuja tarefa é coletar as caixas amarelas (moedas), evitando o material vermelho (lava). Um nível é concluído quando todas as moedas foram coletadas.
 
@@ -471,7 +471,7 @@ Level.prototype.touches = function(pos, size, type) {
 
 O método calcula o conjunto de quadrados da grade com os quais o corpo se sobrepõe usando `Math.floor`e `Math.ceil`em suas coordenadas. Lembre-se de que os quadrados da grade são de 1 por 1 unidades. Ao arredondar os lados de uma caixa para cima e para baixo, obtemos o intervalo de quadrados de fundo em que a caixa toca.
 
-![Localizando colisões em uma grade](https://eloquentjavascript.net/img/game-grid.svg)
+![Localizando colisões em uma grade](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/game-grid.svg)
 
 Passamos pelo bloco de quadrados da grade encontrado arredondando as coordenadas e retornamos `true`quando um quadrado correspondente é encontrado. Quadrados fora do nível são sempre tratados `"wall"`para garantir que o jogador não possa deixar o mundo e que não tentaremos acidentalmente ler fora dos limites da nossa `rows`matriz.
 
