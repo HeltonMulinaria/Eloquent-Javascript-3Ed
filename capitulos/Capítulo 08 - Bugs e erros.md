@@ -4,7 +4,7 @@
 >
 > *—Brian Kernighan e PJ Plauger, Os elementos do estilo de programação*
 
-![Imagem de uma coleção de bugs](https://eloquentjavascript.net/img/chapter_picture_8.jpg)
+![Imagem de uma coleção de bugs](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_8.jpg)
 
 Falhas em programas de computador são geralmente chamadas de *bugs* . Faz com que os programadores se sintam bem ao imaginá-los como pequenas coisas que por acaso se arrastam para o nosso trabalho. Na realidade, é claro, nós os colocamos lá.
 
