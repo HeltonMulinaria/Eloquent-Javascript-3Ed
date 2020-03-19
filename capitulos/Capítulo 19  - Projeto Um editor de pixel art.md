@@ -4,13 +4,13 @@
 >
 > *—Joan Miro*
 
-![Imagem de um mosaico de azulejos](https://eloquentjavascript.net/img/chapter_picture_19.jpg)
+![Imagem de um mosaico de azulejos](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_19.jpg)
 
 O material dos capítulos anteriores fornece todos os elementos necessários para criar um aplicativo Web básico. Neste capítulo, faremos exatamente isso.
 
 Nosso aplicativo será um programa de desenho de pixels, no qual você poderá modificar uma imagem pixel por pixel, manipulando uma visualização ampliada, mostrada como uma grade de quadrados coloridos. Você pode usar o programa para abrir arquivos de imagem, rabiscar neles com o mouse ou outro dispositivo indicador e salvá-los. É assim que será:
 
-![A interface do editor de pixels, com pixels coloridos na parte superior e vários controles abaixo desse](https://eloquentjavascript.net/img/pixel_editor.png)
+![A interface do editor de pixels, com pixels coloridos na parte superior e vários controles abaixo desse](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/pixel_editor.png)
 
 Pintar em um computador é ótimo. Você não precisa se preocupar com materiais, habilidades ou talentos. Você apenas começa a sujar.
 
@@ -337,7 +337,7 @@ Um detalhe importante nesta implementação é que, ao arrastar, o retângulo é
 
 A implementação do preenchimento de cheias está um pouco mais envolvida. Essa é uma ferramenta que preenche o pixel sob o ponteiro e todos os pixels adjacentes que têm a mesma cor. "Adjacente" significa diretamente na horizontal ou na vertical adjacente, não na diagonal. Esta imagem ilustra o conjunto de pixels coloridos quando a ferramenta de preenchimento é usada no pixel marcado:
 
-![Uma grade de pixels mostrando a área preenchida por uma operação de preenchimento de inundação](https://eloquentjavascript.net/img/flood-grid.svg)
+![Uma grade de pixels mostrando a área preenchida por uma operação de preenchimento de inundação](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/flood-grid.svg)
 
 Curiosamente, a maneira como faremos isso se parece um pouco com o código de localização de caminhos do [Capítulo 7](https://eloquentjavascript.net/07_robot.html) . Enquanto esse código pesquisava um gráfico para encontrar uma rota, esse código pesquisava uma grade para encontrar todos os pixels "conectados". O problema de acompanhar um conjunto ramificado de rotas possíveis é semelhante.
 
@@ -748,7 +748,7 @@ Para fazer isso, como os pixels podem estar a uma distância arbitrária, você 
 
 Uma linha entre dois pixels é uma cadeia de pixels conectada, o mais reta possível, indo do início ao fim. Pixels adjacentes na diagonal contam como conectados. Portanto, uma linha inclinada deve se parecer com a imagem à esquerda, não com a imagem à direita.
 
-![Duas linhas pixeladas, uma luz, pulando os pixels na diagonal e outra pesada, com todos os pixels conectados horizontal ou verticalmente](https://eloquentjavascript.net/img/line-grid.svg)
+![Duas linhas pixeladas, uma luz, pulando os pixels na diagonal e outra pesada, com todos os pixels conectados horizontal ou verticalmente](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/line-grid.svg)
 
 Finalmente, se temos um código que desenha uma linha entre dois pontos arbitrários, também podemos usá-lo para definir também uma `line`ferramenta, que desenha uma linha reta entre o início e o final de um arrasto.
 
