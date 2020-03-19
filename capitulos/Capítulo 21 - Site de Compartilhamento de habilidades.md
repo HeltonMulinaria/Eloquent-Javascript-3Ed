@@ -4,7 +4,7 @@
 >
 > *—Margaret Fuller*
 
-![Imagem de dois monociclos](https://eloquentjavascript.net/img/chapter_picture_21.jpg)
+![Imagem de dois monociclos](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_21.jpg)
 
 Uma reunião de *compartilhamento de habilidades* é um evento em que pessoas com interesses compartilhados se reúnem e fazem pequenas apresentações informais sobre o que sabem. Em uma reunião de compartilhamento de habilidades em jardinagem, alguém pode explicar como cultivar aipo. Ou em um grupo de compartilhamento de habilidades de programação, você pode dar uma passada e contar às pessoas sobre o Node.js.
 
@@ -20,7 +20,7 @@ Há uma parte do *servidor* nesse projeto, criada para o Node.js, e uma parte do
 
 O servidor mantém a lista de conversas proposta para a próxima reunião e o cliente mostra essa lista. Cada palestra tem um nome de apresentador, um título, um resumo e uma série de comentários associados. O cliente permite que os usuários proponham novas conversas (adicionando-as à lista), excluam conversas e comentem sobre conversas existentes. Sempre que o usuário faz essa alteração, o cliente faz uma solicitação HTTP para informar o servidor sobre isso.
 
-![Captura de tela do site de compartilhamento de habilidades](https://eloquentjavascript.net/img/skillsharing.png)
+![Captura de tela do site de compartilhamento de habilidades](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/skillsharing.png)
 
 O aplicativo será configurado para mostrar uma exibição *ao vivo* das atuais conversas propostas e seus comentários. Sempre que alguém, em algum lugar, envia uma nova palestra ou adiciona um comentário, todas as pessoas que têm a página aberta em seus navegadores devem ver imediatamente a alteração. Isso representa um desafio - não há como um servidor Web abrir uma conexão com um cliente, nem há uma boa maneira de saber quais clientes estão visualizando um determinado site no momento.
 
