@@ -8,7 +8,7 @@
 >
 > *—Hal Abelson e Gerald Sussman, Estrutura e Interpretação de Programas de Computador*
 
-![Imagem de um ovo com ovos menores dentro](https://eloquentjavascript.net/img/chapter_picture_12.jpg)
+![Imagem de um ovo com ovos menores dentro](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_12.jpg)
 
 Construir sua própria linguagem de programação é surpreendentemente fácil (desde que você não mire muito alto) e muito esclarecedor.
 
@@ -54,7 +54,7 @@ A `>(x, 5)`parte do programa anterior seria representada assim:
 
 Essa estrutura de dados é chamada de *árvore de sintaxe* . Se você imaginar os objetos como pontos e os links entre eles como linhas entre esses pontos, ele terá uma forma de árvore. O fato de expressões conterem outras expressões, que por sua vez podem conter mais expressões, é semelhante à maneira como os galhos das árvores se dividem e se dividem novamente.
 
-![A estrutura de uma árvore de sintaxe](https://eloquentjavascript.net/img/syntax_tree.svg)
+![A estrutura de uma árvore de sintaxe](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/syntax_tree.svg)
 
 Compare isso com o analisador que escrevemos para o formato do arquivo de configuração no [Capítulo 9](https://eloquentjavascript.net/09_regexp.html#ini) , que tinha uma estrutura simples: dividia a entrada em linhas e manipulava essas linhas uma por vez. Havia apenas algumas formas simples que uma linha podia ter.
 
