@@ -4,7 +4,7 @@
 >
 > *—Tef, a programação é terrível*
 
-![Imagem de um edifício construído a partir de peças modulares](https://eloquentjavascript.net/img/chapter_picture_10.jpg)
+![Imagem de um edifício construído a partir de peças modulares](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_10.jpg)
 
 O programa ideal tem uma estrutura cristalina. É fácil explicar como funciona e cada parte tem um papel bem definido.
 
