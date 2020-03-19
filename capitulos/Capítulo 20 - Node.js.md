@@ -4,7 +4,7 @@
 >
 > *—Mestre Yuan-Ma, O Livro de Programação*
 
-![Imagem de um poste de telefone](https://eloquentjavascript.net/img/chapter_picture_20.jpg)
+![Imagem de um poste de telefone](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_20.jpg)
 
 Até agora, usamos a linguagem JavaScript em um único ambiente: o navegador. Este capítulo e o [próximo](https://eloquentjavascript.net/21_skillsharing.html) apresentarão brevemente o Node.js, um programa que permite aplicar suas habilidades de JavaScript fora do navegador. Com ele, você pode criar qualquer coisa, desde pequenas ferramentas de linha de comando até servidores HTTP que alimentam sites dinâmicos.
 
