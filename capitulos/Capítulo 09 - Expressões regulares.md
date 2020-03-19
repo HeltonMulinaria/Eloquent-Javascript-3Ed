@@ -8,7 +8,7 @@
 >
 > *—Mestre Yuan-Ma, O Livro de Programação*
 
-![Um diagrama ferroviário](https://eloquentjavascript.net/img/chapter_picture_9.jpg)
+![Um diagrama ferroviário](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_9.jpg)
 
 As ferramentas e técnicas de programação sobrevivem e se espalham de maneira caótica e evolutiva. Nem sempre são os bonitos ou brilhantes que vencem, mas os que funcionam bem o suficiente no nicho certo ou que são integrados a outra peça de tecnologia bem-sucedida.
 
@@ -285,7 +285,7 @@ Conceitualmente, quando você usa `exec`ou `test`, o mecanismo de expressão reg
 
 Para fazer a correspondência real, o mecanismo trata uma expressão regular como um diagrama de fluxo. Este é o diagrama para a expressão de gado no exemplo anterior:
 
-![Visualização de / \ b \ d + (porco | vaca | frango) s? \ B /](https://eloquentjavascript.net/img/re_pigchickens.svg)
+![Visualização de / \ b \ d + (porco | vaca | frango) s? \ B /](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/re_pigchickens.svg)
 
 Nossa expressão corresponde se pudermos encontrar um caminho do lado esquerdo do diagrama para o lado direito. Mantemos uma posição atual na string e toda vez que movemos uma caixa, verificamos se a parte da string após nossa posição atual corresponde a essa caixa.
 
@@ -302,7 +302,7 @@ Portanto, se tentarmos corresponder `"the 3 pigs"`da posição 4, nosso progress
 
 A expressão regular corresponde a um número binário seguido de a *b* , um número hexadecimal (ou seja, base 16, com as letras de *a* a *f* representando os dígitos de 10 a 15) seguido de um *h* , ou um número decimal regular sem sufixo personagem. Este é o diagrama correspondente:`/\b([01]+b|[\da-f]+h|\d+)\b/`
 
-![Visualização de / \ b ([01] + b | \ d + | [\ da-f] + h) \ b /](https://eloquentjavascript.net/img/re_number.svg)
+![Visualização de / \ b ([01] + b | \ d + | [\ da-f] + h) \ b /](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/re_number.svg)
 
 Ao corresponder a essa expressão, muitas vezes acontece que a ramificação superior (binária) é inserida, mesmo que a entrada realmente não contenha um número binário. Ao combinar a string `"103"`, por exemplo, fica claro apenas nos 3 que estamos no ramo errado. A string *não* corresponder à expressão, não apenas o ramo que estão atualmente em.
 
@@ -314,7 +314,7 @@ O retorno também acontece para operadores de repetição como + e `*`. Se você
 
 É possível escrever expressões regulares que farão *muito* retorno. Esse problema ocorre quando um padrão pode corresponder a uma parte da entrada de várias maneiras diferentes. Por exemplo, se ficarmos confusos ao escrever uma expressão regular de número binário, poderemos escrever acidentalmente algo como `/([01]+)+b/`.
 
-![Visualização de / ([01] +) + b /](https://eloquentjavascript.net/img/re_slow.svg)
+![Visualização de / ([01] +) + b /](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/re_slow.svg)
 
 Se isso tentar corresponder a uma série longa de zeros e outros sem caractere *b* à direita , o correspondente primeiro percorrerá o loop interno até ficar sem dígitos. Em seguida, percebe que não há *b* , então recua uma posição, percorre o loop externo uma vez e desiste novamente, tentando voltar ao loop interno mais uma vez. Ele continuará tentando todas as rotas possíveis através desses dois loops. Isso significa que a quantidade de trabalho *dobra* com cada caractere adicional. Para apenas algumas dezenas de caracteres, a correspondência resultante levará praticamente uma eternidade.
 
