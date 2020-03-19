@@ -4,7 +4,7 @@
 >
 > *—Barbara Liskov, Programação com tipos de dados abstratos*
 
-![Imagem de um coelho com seu proto-coelho](https://eloquentjavascript.net/img/chapter_picture_6.jpg)
+![Imagem de um coelho com seu proto-coelho](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_6.jpg)
 
 [O capítulo 4](https://eloquentjavascript.net/04_data.html) apresentou os objetos do JavaScript. Na cultura de programação, temos uma coisa chamada *programação orientada a objetos* , um conjunto de técnicas que usam objetos (e conceitos relacionados) como o princípio central da organização do programa.
 
@@ -234,7 +234,7 @@ console.log(Rabbit.prototype.teeth);
 
 O diagrama a seguir descreve a situação após a execução desse código. Os protótipos `Rabbit`e `Object`ficam para trás `killerRabbit`como uma espécie de pano de fundo, onde propriedades que não são encontradas no próprio objeto podem ser consultadas.
 
-![Esquema de protótipo de objeto de coelho](https://eloquentjavascript.net/img/rabbits.svg)
+![Esquema de protótipo de objeto de coelho](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/rabbits.svg)
 
 Substituir propriedades que existem em um protótipo pode ser útil. Como o exemplo dos dentes de coelho mostra, a substituição pode ser usada para expressar propriedades excepcionais em instâncias de uma classe de objetos mais genérica, enquanto permite que objetos não excepcionais obtenham um valor padrão de seu protótipo.
 
