@@ -4,7 +4,7 @@
 >
 > *—Marco Aurélio, Meditações*
 
-![Imagine uma máquina Rube Goldberg](https://eloquentjavascript.net/img/chapter_picture_15.jpg)
+![Imagine uma máquina Rube Goldberg](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_15.jpg)
 
 Alguns programas funcionam com entrada direta do usuário, como ações de mouse e teclado. Esse tipo de entrada não está disponível como uma estrutura de dados bem organizada - é fornecida peça por peça, em tempo real, e espera-se que o programa responda a ela assim que acontece.
 
