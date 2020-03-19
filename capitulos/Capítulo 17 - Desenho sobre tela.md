@@ -4,7 +4,7 @@
 >
 > *—MC Escher, citado por Bruno Ernst em The Magic Mirror of MC Escher*
 
-![Imagem de um braço de robô, desenho em papel](https://eloquentjavascript.net/img/chapter_picture_17.jpg)
+![Imagem de um braço de robô, desenho em papel](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_17.jpg)
 
 Os navegadores nos dão várias maneiras de exibir gráficos. A maneira mais simples é usar estilos para posicionar e colorir elementos DOM regulares. Isso pode levar você muito longe, como mostrou o jogo no [capítulo anterior](https://eloquentjavascript.net/16_game.html) . Ao adicionar imagens de plano de fundo parcialmente transparentes aos nós, podemos fazer com que pareçam exatamente da maneira que queremos. É ainda possível girar ou inclinar nós com o `transform`estilo.
 
@@ -278,7 +278,7 @@ Quando `drawImage`são dados *nove* argumentos, ele pode ser usado para desenhar
 
 Isso pode ser usado para compactar vários *sprites* (elementos de imagem) em um único arquivo de imagem e desenhar apenas a parte necessária. Por exemplo, temos esta imagem contendo um personagem do jogo em várias poses:
 
-![Várias poses de um personagem do jogo](https://eloquentjavascript.net/img/player_big.png)
+![Várias poses de um personagem do jogo](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/player_big.png)
 
 Alternando qual pose desenhamos, podemos mostrar uma animação que se parece com um personagem ambulante.
 
@@ -336,7 +336,7 @@ Além disso, existem vários outros métodos `scale`que influenciam o sistema de
 
 Portanto, se traduzirmos por 10 pixels horizontais duas vezes, tudo será desenhado 20 pixels para a direita. Se primeiro movermos o centro do sistema de coordenadas para (50,50) e depois girarmos 20 graus (cerca de 0,1π radianos), essa rotação ocorrerá em *torno do* ponto (50,50).
 
-![Transformações de empilhamento](https://eloquentjavascript.net/img/transform.svg)
+![Transformações de empilhamento](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/transform.svg)
 
 Mas se girarmos *primeiro* 20 graus e *depois* traduzirmos (50,50), a tradução ocorrerá no sistema de coordenadas giradas e, assim, produzirá uma orientação diferente. A ordem na qual as transformações são aplicadas é importante.
 
@@ -352,7 +352,7 @@ function flipHorizontally(context, around) {
 
 Movemos o eixo y para onde queremos que nosso espelho esteja, aplicamos o espelhamento e, finalmente, movemos o eixo y de volta ao seu devido lugar no universo espelhado. A figura a seguir explica por que isso funciona:
 
-![Espelhar em torno de uma linha vertical](https://eloquentjavascript.net/img/mirror.svg)
+![Espelhar em torno de uma linha vertical](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/mirror.svg)
 
 Isso mostra os sistemas de coordenadas antes e depois do espelhamento na linha central. Os triângulos são numerados para ilustrar cada etapa. Se desenharmos um triângulo na posição x positiva, ele estará, por padrão, no local onde está o triângulo 1. Uma chamada para `flipHorizontally`primeiro faz uma tradução para a direita, o que nos leva ao triângulo 2. Em seguida, ele é escalado, passando o triângulo para a posição 3. Este não é o local onde deveria estar, se estivesse espelhado na linha especificada. A segunda `translate`chamada corrige isso - "cancela" a tradução inicial e faz o triângulo 4 aparecer exatamente onde deveria.
 
@@ -524,7 +524,7 @@ CanvasDisplay.prototype.drawBackground = function(level) {
 
 Azulejos que não estão vazios são desenhados com `drawImage`. A `otherSprites`imagem contém as imagens usadas para outros elementos que não o reprodutor. Ele contém, da esquerda para a direita, o revestimento de parede, o revestimento de lava e o sprite para uma moeda.
 
-![Sprites para o nosso jogo](https://eloquentjavascript.net/img/sprites_big.png)
+![Sprites para o nosso jogo](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/sprites_big.png)
 
 Os blocos de plano de fundo têm 20 por 20 pixels, pois usaremos a mesma escala em que usamos `DOMDisplay`. Assim, o deslocamento para ladrilhos de lava é 20 (o valor da `scale`ligação) e o deslocamento para paredes é 0.
 
@@ -648,7 +648,7 @@ Escreva um programa que desenhe as seguintes formas em uma tela:
 4. Uma espiral composta por 100 segmentos de linha reta
 5. Uma estrela amarela
 
-![As formas a desenhar](https://eloquentjavascript.net/img/exercise_shapes.png)
+![As formas a desenhar](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/exercise_shapes.png)
 
 Ao desenhar os dois últimos, convém consultar a explicação `Math.cos`e `Math.sin`no [Capítulo 14](https://eloquentjavascript.net/14_dom.html#sin_cos) , que descreve como obter coordenadas em um círculo usando essas funções.
 
