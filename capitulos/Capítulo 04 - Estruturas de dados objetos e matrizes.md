@@ -268,13 +268,9 @@ Poderíamos pegar o evento de comer pizza e colocá-lo em uma tabela de frequên
 
 Se chamarmos essa tabela *n* , podemos calcular *ϕ* usando a seguinte fórmula:
 
-- [ ]  Adicionar formatação correta da fórmula
+![](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/cap4_frac_sqrt.png)
 
-  **ϕ =  n 11 n 00 - n 10 n 01**
 
-  **√ n 1 • n 0 • n • 1 n • 0**
-
-  
 
 (Se, neste momento, você está colocando o livro de lado para se concentrar em um terrível flashback da aula de matemática da 10ª série - espere! Não pretendo torturá-lo com inúmeras páginas de notação enigmática - é apenas essa fórmula por enquanto. mesmo com este, tudo o que fazemos é transformá-lo em JavaScript.)
 
