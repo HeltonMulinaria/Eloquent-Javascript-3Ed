@@ -10,7 +10,7 @@ Neste capítulo, começaremos a fazer coisas que realmente podem ser chamadas de
 
 ## Expressões e declarações
 
-No [Capítulo 1](https://eloquentjavascript.net/01_values.html) , criamos valores e aplicamos operadores a eles para obter novos valores. Criar valores como esse é a principal substância de qualquer programa JavaScript. Mas essa substância precisa ser enquadrada em uma estrutura maior para ser útil. Então é isso que abordaremos a seguir.
+No [Capítulo 1](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2001%20-%20Valores%2C%20tipos%20e%20operadores.md) , criamos valores e aplicamos operadores a eles para obter novos valores. Criar valores como esse é a principal substância de qualquer programa JavaScript. Mas essa substância precisa ser enquadrada em uma estrutura maior para ser útil. Então é isso que abordaremos a seguir.
 
 Um fragmento de código que produz um valor é chamado de *expressão* . Todo valor que é escrito literalmente (como `22`ou `"psychoanalysis"`) é uma expressão. Uma expressão entre parênteses também é uma expressão, assim como um operador binário aplicado a duas expressões ou um operador unário aplicado a uma.
 
@@ -158,7 +158,7 @@ console.log(Math.min(2, 4) + 100);
 // → 102
 ```
 
-O [próximo capítulo](https://eloquentjavascript.net/03_functions.html) explica como escrever suas próprias funções.
+O [próximo capítulo](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2003%20-%20Fun%C3%A7%C3%B5es.md) explica como escrever suas próprias funções.
 
 ## Controle de fluxo
 
@@ -237,7 +237,7 @@ O esquema para este programa é mais ou menos assim:
 
 ![Aninhado se o fluxo de controle](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/controlflow-nested-if.svg)
 
-## enquanto e fazer loops
+## While e Loop For
 
 Considere um programa que produz todos os números pares de 0 a 12. Uma maneira de escrever isso é a seguinte:
 
@@ -285,7 +285,7 @@ console.log(result);
 // → 1024
 ```
 
-O contador também poderia ter iniciado `1`e verificado `<= 10`, mas por razões que se tornarão aparentes no [Capítulo 4](https://eloquentjavascript.net/04_data.html#array_indexing) , é uma boa idéia se acostumar a contar a partir de 0.
+O contador também poderia ter iniciado `1`e verificado `<= 10`, mas por razões que se tornarão aparentes no [Capítulo 4](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2004%20-%20Estruturas%20de%20dados%20objetos%20e%20matrizes.md#properties) , é uma boa idéia se acostumar a contar a partir de 0.
 
 Um `do`loop é uma estrutura de controle semelhante a um `while`loop. Ele difere apenas em um ponto: um `do`loop sempre executa seu corpo pelo menos uma vez e começa a testar se deve parar somente após a primeira execução. Para refletir isso, o teste aparece após o corpo do loop.
 
@@ -331,7 +331,7 @@ for (let number = 0; number <= 12; number = number + 2) {
 //   … etcetera
 ```
 
-Este programa é exatamente equivalente ao exemplo [anterior](https://eloquentjavascript.net/02_program_structure.html#loops) de impressão de números pares. A única mudança é que todas as instruções relacionadas ao "estado" do loop são agrupadas depois `for`.
+Este programa é exatamente equivalente ao exemplo [anterior](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2002%20-%20Estrutura%20do%20Programa.md#While e Loop For) de impressão de números pares. A única mudança é que todas as instruções relacionadas ao "estado" do loop são agrupadas depois `for`.
 
 Os parênteses após uma `for`palavra - chave devem conter dois pontos e vírgulas. A parte antes do primeiro ponto e vírgula *inicializa* o loop, geralmente definindo uma ligação. A segunda parte é a expressão que *verifica* se o loop deve continuar. A parte final *atualiza* o estado do loop após cada iteração. Na maioria dos casos, isso é mais curto e mais claro que uma `while`construção.
 
@@ -442,7 +442,7 @@ fuzzyLittleTurtle
 
 O primeiro estilo pode ser difícil de ler. Eu gosto bastante da aparência dos sublinhados, embora esse estilo seja um pouco doloroso para digitar. As funções padrão do JavaScript, e a maioria dos programadores de JavaScript, seguem o estilo inferior - elas capitalizam cada palavra, exceto a primeira. Não é difícil se acostumar com pequenas coisas assim, e o código com estilos de nomes mistos pode ser difícil de ler, por isso seguimos esta convenção.
 
-Em alguns casos, como a `Number`função, a primeira letra de uma ligação também é maiúscula. Isso foi feito para marcar essa função como um construtor. O que é um construtor ficará claro no [Capítulo 6](https://eloquentjavascript.net/06_object.html#constructors) . Por enquanto, o importante não deve ser incomodado por essa aparente falta de consistência.
+Em alguns casos, como a `Number`função, a primeira letra de uma ligação também é maiúscula. Isso foi feito para marcar essa função como um construtor. O que é um construtor ficará claro no [Capítulo 6](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2006%20-%20A%20Vida%20Secreta%20dos%20Objetos.md#Notação de Classe)) . Por enquanto, o importante não deve ser incomodado por essa aparente falta de consistência.
 
 ## Comentários
 
@@ -485,9 +485,11 @@ Funções são valores especiais que encapsulam uma parte do programa. Você pod
 
 ## Exercícios
 
-Se você não souber como testar suas soluções para os exercícios, consulte a [Introdução](https://eloquentjavascript.net/00_intro.html) .
+Se você não souber como testar suas soluções para os exercícios, consulte a [Introdução](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/00%20-%20Introdu%C3%A7%C3%A3o.md) .
 
 Cada exercício começa com uma descrição do problema. Leia esta descrição e tente resolver o exercício. Se você tiver problemas, considere ler as dicas após o exercício. As soluções completas para os exercícios não estão incluídas neste livro, mas você pode encontrá-las online em [*https://eloquentjavascript.net/code*](https://eloquentjavascript.net/code#2) . Se você quiser aprender alguma coisa com os exercícios, recomendo analisar as soluções somente depois de resolvê-lo, ou pelo menos depois de atacá-lo por tempo suficiente para ter uma leve dor de cabeça.
+
+- [ ] verificar a necessidade de tradução deste conteúdo https://eloquentjavascript.net/code
 
 ### Dar laços em um triângulo
 
@@ -517,7 +519,7 @@ A maioria dos exercícios contém um código que você pode modificar para resol
 // Your code here.
 ```
 
-Você pode começar com um programa que imprima os números de 1 a 7, que você pode derivar fazendo algumas modificações no [exemplo de impressão de números pares,](https://eloquentjavascript.net/02_program_structure.html#loops) fornecido anteriormente no capítulo, onde o `for`loop foi introduzido.
+Você pode começar com um programa que imprima os números de 1 a 7, que você pode derivar fazendo algumas modificações no [exemplo de impressão de números pares,](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2002%20-%20Estrutura%20do%20Programa.md#While e Loop For) fornecido anteriormente no capítulo, onde o `for`loop foi introduzido.
 
 Agora considere a equivalência entre números e seqüências de caracteres de hash. Você pode passar de 1 para 2 adicionando 1 ( `+= 1`). Você pode ir de `"#"`para `"##"`adicionando um caractere ( `+= "#"`). Assim, sua solução pode acompanhar de perto o programa de impressão numérica.
 
