@@ -126,7 +126,7 @@ Obviamente, há situações em que você deseja que uma barra invertida em uma s
 
 As strings também precisam ser modeladas como uma série de bits para poder existir dentro do computador. A maneira como o JavaScript faz isso é baseada no padrão *Unicode* . Esse padrão atribui um número a praticamente todos os caracteres de que você precisa, incluindo caracteres do grego, árabe, japonês, armênio etc. Se tivermos um número para cada caractere, uma sequência poderá ser descrita por uma sequência de números.
 
-E é isso que o JavaScript faz. Mas há uma complicação: a representação do JavaScript usa 16 bits por elemento de string, que pode descrever até 2 16 caracteres diferentes. Mas o Unicode define mais caracteres que isso - cerca do dobro, neste momento. Portanto, alguns caracteres, como muitos emoji, ocupam duas "posições de caracteres" em strings JavaScript. Voltaremos a isso no [capítulo 5](https://eloquentjavascript.net/05_higher_order.html#code_units) .
+E é isso que o JavaScript faz. Mas há uma complicação: a representação do JavaScript usa 16 bits por elemento de string, que pode descrever até 2 16 caracteres diferentes. Mas o Unicode define mais caracteres que isso - cerca do dobro, neste momento. Portanto, alguns caracteres, como muitos emoji, ocupam duas "posições de caracteres" em strings JavaScript. Voltaremos a isso no [capítulo 5](s) .
 
 As seqüências não podem ser divididas, multiplicadas ou subtraídas, mas o `+`operador *pode* ser usado nelas. Não acrescenta, mas *concatena* - cola duas strings. A seguinte linha produzirá a sequência `"concatenate"`:
 
@@ -134,7 +134,7 @@ As seqüências não podem ser divididas, multiplicadas ou subtraídas, mas o `+
 "con" + "cat" + "e" + "nate"
 ```
 
-Os valores de sequência possuem várias funções ( *métodos* ) associadas que podem ser usadas para executar outras operações nelas. Vou falar mais sobre isso no [capítulo 4](https://eloquentjavascript.net/04_data.html#methods) .
+Os valores de sequência possuem várias funções ( *métodos* ) associadas que podem ser usadas para executar outras operações nelas. Vou falar mais sobre isso no [capítulo 4](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2004%20-%20Estruturas%20de%20dados%20objetos%20e%20matrizes.md#métodos) .
 
 As strings escritas com aspas simples ou duplas se comportam da mesma maneira - a única diferença é em que tipo de aspas você precisa escapar dentro delas. Seqüências de caracteres entre aspas, normalmente chamadas de *modelo literal* , podem fazer mais alguns truques. Além de poderem estender linhas, eles também podem incorporar outros valores.
 
@@ -155,7 +155,7 @@ console.log(typeof "x")
 // → string
 ```
 
-Usaremos `console.log`no código de exemplo para indicar que queremos ver o resultado da avaliação de algo. Mais sobre isso no [próximo capítulo](https://eloquentjavascript.net/02_program_structure.html) .
+Usaremos `console.log`no código de exemplo para indicar que queremos ver o resultado da avaliação de algo. Mais sobre isso no [próximo capítulo](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2002%20-%20Estrutura%20do%20Programa.md) .
 
 Os outros operadores mostrados operavam com dois valores, mas `typeof`usam apenas um. Os operadores que usam dois valores são chamados de operadores *binários* , enquanto os que usam um são chamados de operadores *unários* . O operador negativo pode ser usado como um operador binário e como um operador unário.
 
@@ -320,4 +320,4 @@ Analisamos quatro tipos de valores JavaScript neste capítulo: números, seqüê
 
 Esses valores são criados digitando seu nome ( `true`, `null`) ou valor ( `13`, `"abc"`). Você pode combinar e transformar valores com operadores. Vimos operadores binários para a aritmética ( `+`, `-`, `*`, `/`, e `%`), concatenação ( `+`), a comparação ( `==`, `!=`, `===`, `!==`, `<`, `>`, `<=`, `>=`) e lógica ( `&&`, `||`), bem como vários operadores unários ( `-`para negar um número, `!`para negar logicamente e `typeof`para encontrar o tipo de um valor) e um operador ternário ( `?:`) para escolher um dos dois valores com base em um terceiro valor.
 
-Isso fornece informações suficientes para usar o JavaScript como uma calculadora de bolso, mas não muito mais. O [próximo capítulo](https://eloquentjavascript.net/02_program_structure.html) começará a vincular essas expressões em programas básicos.
+Isso fornece informações suficientes para usar o JavaScript como uma calculadora de bolso, mas não muito mais. O [próximo capítulo](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2002%20-%20Estrutura%20do%20Programa.md) começará a vincular essas expressões em programas básicos.
