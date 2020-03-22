@@ -6,7 +6,7 @@
 
 ![Imagem de um poste de telefone](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_20.jpg)
 
-Até agora, usamos a linguagem JavaScript em um único ambiente: o navegador. Este capítulo e o [próximo](https://eloquentjavascript.net/21_skillsharing.html) apresentarão brevemente o Node.js, um programa que permite aplicar suas habilidades de JavaScript fora do navegador. Com ele, você pode criar qualquer coisa, desde pequenas ferramentas de linha de comando até servidores HTTP que alimentam sites dinâmicos.
+Até agora, usamos a linguagem JavaScript em um único ambiente: o navegador. Este capítulo e o [próximo](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2021%20-%20Site%20de%20Compartilhamento%20de%20habilidades.md) apresentarão brevemente o Node.js, um programa que permite aplicar suas habilidades de JavaScript fora do navegador. Com ele, você pode criar qualquer coisa, desde pequenas ferramentas de linha de comando até servidores HTTP que alimentam sites dinâmicos.
 
 Esses capítulos têm como objetivo ensinar os principais conceitos usados pelo Node.js. e fornecer informações suficientes para a criação de programas úteis. Eles não tentam ser um tratamento completo ou mesmo completo da plataforma.
 
@@ -67,7 +67,7 @@ Todas as ligações padrão JavaScript globais, tais como `Array`, `Math`e `JSON
 
 Além das ligações que mencionei, como `console`e `process`, o Node coloca poucas ligações adicionais no escopo global. Se você deseja acessar a funcionalidade interna, é necessário solicitar ao sistema do módulo.
 
-O sistema do módulo CommonJS, com base na `require`função, foi descrito no [Capítulo 10](https://eloquentjavascript.net/10_modules.html#commonjs) . Este sistema está embutido no Node e é usado para carregar qualquer coisa, desde módulos internos a pacotes baixados até arquivos que fazem parte do seu próprio programa.
+O sistema do módulo CommonJS, com base na `require`função, foi descrito no [Capítulo 10]https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2010%20-%20M%C3%B3dulos.md) . Este sistema está embutido no Node e é usado para carregar qualquer coisa, desde módulos internos a pacotes baixados até arquivos que fazem parte do seu próprio programa.
 
 Quando `require`é chamado, o Nó precisa resolver a sequência especificada para um arquivo real que ele pode carregar. Os nomes de caminhos que começam com `/`, `./`ou `../`são resolvidos em relação ao caminho do módulo atual, onde `.`representa o diretório atual, `../`um diretório acima e `/`a raiz do sistema de arquivos. Portanto, se você solicitar o arquivo , o Node tentará carregar o arquivo .`"./graph"``/tmp/robot/robot.js``/tmp/robot/graph.js`
 
@@ -105,9 +105,9 @@ tpircSavaJ
 
 ## Instalando com NPM
 
-O NPM, que foi introduzido no [Capítulo 10](https://eloquentjavascript.net/10_modules.html#modules_npm) , é um repositório online de módulos JavaScript, muitos dos quais foram escritos especificamente para o Node. Ao instalar o Node no seu computador, você também recebe o `npm`comando, que pode ser usado para interagir com este repositório.
+O NPM, que foi introduzido no [Capítulo 10](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2010%20-%20M%C3%B3dulos.md) , é um repositório online de módulos JavaScript, muitos dos quais foram escritos especificamente para o Node. Ao instalar o Node no seu computador, você também recebe o `npm`comando, que pode ser usado para interagir com este repositório.
 
-O principal uso do NPM é o download de pacotes. Vimos o `ini`pacote no [capítulo 10](https://eloquentjavascript.net/10_modules.html#modules_ini) . Podemos usar o NPM para buscar e instalar esse pacote em nosso computador.
+O principal uso do NPM é o download de pacotes. Vimos o `ini`pacote no [capítulo 10](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2010%20-%20M%C3%B3dulos.md) . Podemos usar o NPM para buscar e instalar esse pacote em nosso computador.
 
 ```
 $ npm install ini
@@ -130,7 +130,7 @@ Por padrão, o NPM instala pacotes no diretório atual, e não em um local centr
 
 No `npm install`exemplo, você pode ver um aviso sobre o fato de o `package.json`arquivo não existir. É recomendável criar um arquivo para cada projeto, manualmente ou executando `npm init`. Ele contém algumas informações sobre o projeto, como nome e versão, e lista suas dependências.
 
-A simulação de robô do [Capítulo 7](https://eloquentjavascript.net/07_robot.html) , conforme modularizada no exercício do [Capítulo 10](https://eloquentjavascript.net/10_modules.html#modular_robot) , pode ter um `package.json`arquivo como este:
+A simulação de robô do [Capítulo 7](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2007%20-%20Projeto%20Um%20Rob%C3%B4.md) , conforme modularizada no exercício do [Capítulo 10](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2010%20-%20M%C3%B3dulos.md) , pode ter um `package.json`arquivo como este:
 
 ```json
 {
@@ -202,7 +202,7 @@ Aqui não era necessário especificar a codificação `writeFile`- assumirá que
 
 O `fs`módulo contém muitas outras funções úteis: `readdir`retornará os arquivos em um diretório como uma matriz de seqüências de caracteres, `stat`recuperará informações sobre um arquivo, `rename`renomeará um arquivo, `unlink`removerá um e assim por diante. Consulte a documentação em [*https://nodejs.org*](https://nodejs.org/) para obter detalhes.
 
-A maioria deles aceita uma função de retorno de chamada como o último parâmetro, que eles chamam com um erro (o primeiro argumento) ou com um resultado bem-sucedido (o segundo). Como vimos no [Capítulo 11](https://eloquentjavascript.net/11_async.html) , há desvantagens nesse estilo de programação - a maior delas é que o tratamento de erros se torna detalhado e propenso a erros.
+A maioria deles aceita uma função de retorno de chamada como o último parâmetro, que eles chamam com um erro (o primeiro argumento) ou com um resultado bem-sucedido (o segundo). Como vimos no [Capítulo 11](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2011%20-%20Programa%C3%A7%C3%A3o%20ass%C3%ADncrona.md) , há desvantagens nesse estilo de programação - a maior delas é que o tratamento de erros se torna detalhado e propenso a erros.
 
 Embora as promessas façam parte do JavaScript há algum tempo, no momento em que escrevemos, sua integração ao Node.js ainda está em andamento. Há um objeto `promises`exportado do `fs`pacote desde a versão 10.1 que contém a maioria das mesmas funções, `fs`mas usa promessas em vez de funções de retorno de chamada.
 
@@ -247,7 +247,7 @@ A função passada como argumento para `createServer`é chamada sempre que um cl
 
 Portanto, quando você abre essa página no seu navegador, ela envia uma solicitação para o seu próprio computador. Isso faz com que a função do servidor seja executada e devolva uma resposta, que você poderá ver no navegador.
 
-Para enviar algo de volta, você chama métodos no `response`objeto. O primeiro, `writeHead`escreverá os cabeçalhos de resposta (consulte o [Capítulo 18](https://eloquentjavascript.net/18_http.html#headers) ). Você fornece o código de status (200 para "OK" neste caso) e um objeto que contém valores de cabeçalho. O exemplo define o `Content-Type`cabeçalho para informar ao cliente que enviaremos de volta um documento HTML.
+Para enviar algo de volta, você chama métodos no `response`objeto. O primeiro, `writeHead`escreverá os cabeçalhos de resposta (consulte o [Capítulo 18](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2018%20-%20%20HTTP%20e%20formul%C3%A1rios.md). Você fornece o código de status (200 para "OK" neste caso) e um objeto que contém valores de cabeçalho. O exemplo define o `Content-Type`cabeçalho para informar ao cliente que enviaremos de volta um documento HTML.
 
 Em seguida, o corpo da resposta real (o próprio documento) é enviado com `response.write`. Você pode chamar esse método várias vezes se desejar enviar a resposta peça por peça, por exemplo, para transmitir dados ao cliente assim que estiverem disponíveis. Finalmente, `response.end`sinaliza o fim da resposta.
 
@@ -255,7 +255,7 @@ A chamada para `server.listen`faz com que o servidor comece a aguardar conexões
 
 Quando você executa esse script, o processo fica parado e aguarda. Quando um script está ouvindo eventos - nesse caso, conexões de rede - `node`não sai automaticamente quando chega ao final do script. Para fechá-lo, pressione o controle -C.
 
-Um servidor da Web real geralmente faz mais do que o exemplo - examina o método da solicitação (a `method`propriedade) para ver qual ação o cliente está tentando executar e o URL da solicitação para descobrir qual recurso esta ação está sendo executada. em. Veremos um servidor mais avançado [posteriormente neste capítulo](https://eloquentjavascript.net/20_node.html#file_server) .
+Um servidor da Web real geralmente faz mais do que o exemplo - examina o método da solicitação (a `method`propriedade) para ver qual ação o cliente está tentando executar e o URL da solicitação para descobrir qual recurso esta ação está sendo executada. em. Veremos um servidor mais avançado [posteriormente neste capítulo](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2020%20-%20Node.js.md#Um servidor de arquivos) .
 
 Para atuar como um *cliente* HTTP , podemos usar a `request`função no `http`módulo
 
@@ -551,7 +551,7 @@ Escreva uma página HTML básica que inclua um arquivo JavaScript simples. Coloq
 
 Em seguida, como um exercício avançado ou mesmo um projeto de fim de semana, combine todo o conhecimento que você adquiriu com este livro para criar uma interface mais amigável para modificar o site - de *dentro* do site.
 
-Use um formulário HTML para editar o conteúdo dos arquivos que compõem o site, permitindo que o usuário os atualize no servidor usando solicitações HTTP, conforme descrito no [Capítulo 18](https://eloquentjavascript.net/18_http.html) .
+Use um formulário HTML para editar o conteúdo dos arquivos que compõem o site, permitindo que o usuário os atualize no servidor usando solicitações HTTP, conforme descrito no [Capítulo 18](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2018%20-%20%20HTTP%20e%20formul%C3%A1rios.md) .
 
 Comece tornando apenas um único arquivo editável. Em seguida, faça com que o usuário possa selecionar qual arquivo editar. Use o fato de que nosso servidor de arquivos retorna listas de arquivos ao ler um diretório.
 
