@@ -6,7 +6,7 @@
 
 ![Imagem de um formulário da Web em um pergaminho medieval](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_18.jpg)
 
-O *Hypertext Transfer Protocol* , já mencionado no [Capítulo 13](https://eloquentjavascript.net/13_browser.html#web) , é o mecanismo pelo qual os dados são solicitados e fornecidos na World Wide Web. Este capítulo descreve o protocolo com mais detalhes e explica como o JavaScript do navegador tem acesso a ele.
+O *Hypertext Transfer Protocol* , já mencionado no [Capítulo 13](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2013%20-%20JavaScript%20e%20o%20Navegador.md#web) , é o mecanismo pelo qual os dados são solicitados e fornecidos na World Wide Web. Este capítulo descreve o protocolo com mais detalhes e explica como o JavaScript do navegador tem acesso a ele.
 
 ## O protocolo
 
@@ -115,7 +115,7 @@ name=Jean&message=Yes%3F
 
 `GET`solicitações devem ser usadas para solicitações que não têm efeitos colaterais, mas simplesmente solicitam informações. Solicitações que alteram algo no servidor, por exemplo, criando uma nova conta ou postando uma mensagem, devem ser expressas com outros métodos, como `POST`. Softwares do lado do cliente, como um navegador, sabem que não devem fazer `POST`solicitações às cegas, mas geralmente fazem `GET`solicitações implicitamente - por exemplo, para buscar previamente um recurso que acredita que o usuário precisará em breve.
 
-Voltaremos aos formulários e como interagir com eles a partir do JavaScript [mais adiante neste capítulo](https://eloquentjavascript.net/18_http.html#forms) .
+Voltaremos aos formulários e como interagir com eles a partir do JavaScript [mais adiante neste capítulo](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2018%20-%20%20HTTP%20e%20formul%C3%A1rios.md#forms) .
 
 ## Fetch
 
@@ -532,7 +532,7 @@ function readFileText(file) {
 
 Páginas HTML simples com um pouco de JavaScript podem ser um ótimo formato para "mini aplicativos" - pequenos programas auxiliares que automatizam tarefas básicas. Ao conectar alguns campos de formulário a manipuladores de eventos, você pode fazer qualquer coisa, desde conversão entre centímetros e polegadas até senhas de computação de uma senha mestra e de um nome de site.
 
-Quando esse aplicativo precisa se lembrar de algo entre as sessões, você não pode usar ligações JavaScript - elas são descartadas toda vez que a página é fechada. Você pode configurar um servidor, conectá-lo à Internet e fazer com que seu aplicativo armazene algo lá. Veremos como fazer isso no [capítulo 20](https://eloquentjavascript.net/20_node.html) . Mas isso é muito trabalho e complexidade extra. Às vezes, basta manter os dados no navegador.
+Quando esse aplicativo precisa se lembrar de algo entre as sessões, você não pode usar ligações JavaScript - elas são descartadas toda vez que a página é fechada. Você pode configurar um servidor, conectá-lo à Internet e fazer com que seu aplicativo armazene algo lá. Veremos como fazer isso no [capítulo 20](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2020%20-%20Node.js.md) . Mas isso é muito trabalho e complexidade extra. Às vezes, basta manter os dados no navegador.
 
 O `localStorage`objeto pode ser usado para armazenar dados de uma maneira que sobreviva às recargas da página. Este objeto permite que você arquive valores de cadeia de caracteres em nomes.
 
@@ -647,7 +647,7 @@ Por fim, tente solicitar o tipo de mídia e veja qual código de status produz.`
 // Your code here.
 ```
 
-Baseie seu código nos `fetch`exemplos [anteriores neste capítulo](https://eloquentjavascript.net/18_http.html#fetch) .
+Baseie seu código nos `fetch`exemplos [anteriores neste capítulo]https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2018%20-%20%20HTTP%20e%20formul%C3%A1rios.md#fetch) .
 
 Solicitar um tipo de mídia falsa retornará uma resposta com o código 406, “Não aceitável”, que é o código que um servidor deve retornar quando não conseguir preencher o `Accept`cabeçalho.
 
@@ -698,7 +698,7 @@ Implemente esse jogo usando a estrutura de dados que achar apropriada. Use `Math
 
 Para resolver o problema de fazer as mudanças conceitualmente acontecerem ao mesmo tempo, tente ver o cálculo de uma geração como uma função pura, que pega uma grade e produz uma nova grade que representa a próxima curva.
 
-A representação da matriz pode ser feita da maneira mostrada no [capítulo 6](https://eloquentjavascript.net/06_object.html#matrix) . Você pode contar vizinhos ativos com dois loops aninhados, fazendo um loop sobre coordenadas adjacentes em ambas as dimensões. Tome cuidado para não contar células fora do campo e ignorar a célula no centro, cujos vizinhos estamos contando.
+A representação da matriz pode ser feita da maneira mostrada no [capítulo 6](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2006%20-%20A%20Vida%20Secreta%20dos%20Objetos.md#matrix) . Você pode contar vizinhos ativos com dois loops aninhados, fazendo um loop sobre coordenadas adjacentes em ambas as dimensões. Tome cuidado para não contar células fora do campo e ignorar a célula no centro, cujos vizinhos estamos contando.
 
 Garantir que as alterações nas caixas de seleção entrem em vigor na próxima geração pode ser feito de duas maneiras. Um manipulador de eventos pode observar essas alterações e atualizar a grade atual para refleti-las, ou você pode gerar uma nova grade a partir dos valores nas caixas de seleção antes de calcular a próxima curva.
 
