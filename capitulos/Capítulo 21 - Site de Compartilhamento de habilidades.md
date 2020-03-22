@@ -12,7 +12,7 @@ Esses encontros - também chamados *de grupos de usuários* quando se trata de c
 
 Neste capítulo final do projeto, nosso objetivo é criar um site para gerenciar as palestras realizadas em uma reunião de compartilhamento de habilidades. Imagine um pequeno grupo de pessoas que se encontra regularmente no escritório de um dos membros para conversar sobre andar de bicicleta. O organizador anterior das reuniões mudou-se para outra cidade e ninguém se adiantou para assumir essa tarefa. Queremos um sistema que permita aos participantes propor e discutir conversas entre si, sem um organizador central.
 
-Assim como no [capítulo anterior](https://eloquentjavascript.net/20_node.html) , parte do código deste capítulo foi escrito para o Node.js, e é improvável que funcioná-lo diretamente na página HTML que você está visualizando. O código completo do projeto pode ser baixado em [*https://eloquentjavascript.net/code/skillsharing.zip*](https://eloquentjavascript.net/code/skillsharing.zip) .
+Assim como no [capítulo anterior](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2020%20-%20Node.js.md) , parte do código deste capítulo foi escrito para o Node.js, e é improvável que funcioná-lo diretamente na página HTML que você está visualizando. O código completo do projeto pode ser baixado em [*https://eloquentjavascript.net/code/skillsharing.zip*](https://eloquentjavascript.net/code/skillsharing.zip) .
 
 ## Projeto
 
@@ -46,7 +46,7 @@ Um servidor ocupado que usa sondagem longa pode ter milhares de solicitações e
 
 Antes de começarmos a projetar o servidor ou o cliente, vamos pensar no ponto em que eles tocam: a interface HTTP sobre a qual eles se comunicam.
 
-Usaremos JSON como o formato do nosso corpo de solicitação e resposta. Como no servidor de arquivos do [Capítulo 20](https://eloquentjavascript.net/20_node.html#file_server) , tentaremos fazer bom uso dos métodos e cabeçalhos HTTP. A interface está centralizada no `/talks`caminho. Os caminhos que não começarem `/talks`serão usados para veicular arquivos estáticos - o código HTML e JavaScript do sistema do lado do cliente.
+Usaremos JSON como o formato do nosso corpo de solicitação e resposta. Como no servidor de arquivos do [Capítulo 20](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2020%20-%20Node.js.md) , tentaremos fazer bom uso dos métodos e cabeçalhos HTTP. A interface está centralizada no `/talks`caminho. Os caminhos que não começarem `/talks`serão usados para veicular arquivos estáticos - o código HTML e JavaScript do sistema do lado do cliente.
 
 Uma `GET`solicitação para `/talks`retornar um documento JSON como este:
 
@@ -161,7 +161,7 @@ As funções do manipulador são chamadas com o `context`valor (que será a inst
 
 ### Servindo arquivos
 
-Quando uma solicitação corresponde a nenhum dos tipos de solicitação definidos em nosso roteador, o servidor deve interpretá-la como uma solicitação de um arquivo no `public`diretório Seria possível usar o servidor de arquivos definido no [Capítulo 20](https://eloquentjavascript.net/20_node.html#file_server) para servir esses arquivos, mas não precisamos nem queremos dar suporte `PUT`e `DELETE`solicitações em arquivos, e gostaríamos de ter recursos avançados, como suporte para armazenamento em cache. Então, vamos usar um servidor de arquivos estático sólido e bem testado do NPM.
+Quando uma solicitação corresponde a nenhum dos tipos de solicitação definidos em nosso roteador, o servidor deve interpretá-la como uma solicitação de um arquivo no `public`diretório Seria possível usar o servidor de arquivos definido no [Capítulo 20](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2020%20-%20Node.js.md) para servir esses arquivos, mas não precisamos nem queremos dar suporte `PUT`e `DELETE`solicitações em arquivos, e gostaríamos de ter recursos avançados, como suporte para armazenamento em cache. Então, vamos usar um servidor de arquivos estático sólido e bem testado do NPM.
 
 Eu optei por `ecstatic`. Este não é o único servidor desse tipo no NPM, mas funciona bem e se ajusta aos nossos propósitos. O `ecstatic`pacote exporta uma função que pode ser chamada com um objeto de configuração para produzir uma função de manipulador de solicitação. Usamos a `root`opção para informar ao servidor onde ele deve procurar arquivos. A função de manipulador aceita `request`e `response`parâmetros e pode ser passado diretamente para `createServer`criar um servidor que serve *apenas* arquivos. Porém, queremos primeiro verificar as solicitações com as quais devemos lidar especialmente, para envolvê-lo em outra função.
 
@@ -206,7 +206,7 @@ class SkillShareServer {
 }
 ```
 
-Isso usa uma convenção semelhante ao servidor de arquivos do [capítulo anterior](https://eloquentjavascript.net/20_node.html) para respostas - manipuladores retornam promessas que são resolvidas para objetos que descrevem a resposta. Envolve o servidor em um objeto que também mantém seu estado.
+Isso usa uma convenção semelhante ao servidor de arquivos do [capítulo anterior](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2020%20-%20Node.js.md) para respostas - manipuladores retornam promessas que são resolvidas para objetos que descrevem a resposta. Envolve o servidor em um objeto que também mantém seu estado.
 
 ### Fala como recursos
 
@@ -239,7 +239,7 @@ router.add("DELETE", talkPath, async (server, title) => {
 });
 ```
 
-O `updated`método, que definiremos [posteriormente](https://eloquentjavascript.net/21_skillsharing.html#updated) , notifica a espera de longas solicitações de pesquisa sobre a alteração.
+O `updated`método, que definiremos [https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2021%20-%20Site%20de%20Compartilhamento%20de%20habilidades.md) , notifica a espera de longas solicitações de pesquisa sobre a alteração.
 
 Para recuperar o conteúdo de um corpo de solicitação, definimos uma função chamada `readStream`, que lê todo o conteúdo de um fluxo legível e retorna uma promessa que é resolvida em uma string.
 
@@ -471,7 +471,7 @@ function reportError(error) {
 
 ### Componentes de renderização
 
-Usaremos uma abordagem semelhante à que vimos no [Capítulo 19](https://eloquentjavascript.net/19_paint.html) , dividindo o aplicativo em componentes. Mas como alguns componentes nunca precisam ser atualizados ou sempre são totalmente redesenhados quando atualizados, os definiremos não como classes, mas como funções que retornam diretamente um nó DOM. Por exemplo, aqui está um componente que mostra o campo em que o usuário pode inserir seu nome:
+Usaremos uma abordagem semelhante à que vimos no [Capítulo 19](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2019%20%20-%20Projeto%20Um%20editor%20de%20pixel%20art.md) , dividindo o aplicativo em componentes. Mas como alguns componentes nunca precisam ser atualizados ou sempre são totalmente redesenhados quando atualizados, os definiremos não como classes, mas como funções que retornam diretamente um nó DOM. Por exemplo, aqui está um componente que mostra o campo em que o usuário pode inserir seu nome:
 
 ```js
 function renderUserField(name, dispatch) {
@@ -485,7 +485,7 @@ function renderUserField(name, dispatch) {
 }
 ```
 
-A `elt`função usada para construir elementos DOM é a que usamos no [Capítulo 19](https://eloquentjavascript.net/19_paint.html) .
+A `elt`função usada para construir elementos DOM é a que usamos no [Capítulo 19](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2019%20%20-%20Projeto%20Um%20editor%20de%20pixel%20art.md) .
 
 Uma função semelhante é usada para render palestras, que incluem uma lista de comentários e um formulário para adicionar um novo comentário.
 
