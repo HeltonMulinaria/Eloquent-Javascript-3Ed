@@ -6,7 +6,7 @@
 
 ![Imagem de um braço de robô, desenho em papel](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_17.jpg)
 
-Os navegadores nos dão várias maneiras de exibir gráficos. A maneira mais simples é usar estilos para posicionar e colorir elementos DOM regulares. Isso pode levar você muito longe, como mostrou o jogo no [capítulo anterior](https://eloquentjavascript.net/16_game.html) . Ao adicionar imagens de plano de fundo parcialmente transparentes aos nós, podemos fazer com que pareçam exatamente da maneira que queremos. É ainda possível girar ou inclinar nós com o `transform`estilo.
+Os navegadores nos dão várias maneiras de exibir gráficos. A maneira mais simples é usar estilos para posicionar e colorir elementos DOM regulares. Isso pode levar você muito longe, como mostrou o jogo no [capítulo anterior](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2016%20-%20%20Projeto%20Um%20Jogo%20de%20Plataforma.md) . Ao adicionar imagens de plano de fundo parcialmente transparentes aos nós, podemos fazer com que pareçam exatamente da maneira que queremos. É ainda possível girar ou inclinar nós com o `transform`estilo.
 
 Mas estaríamos usando o DOM para algo para o qual não foi originalmente projetado. Algumas tarefas, como desenhar uma linha entre pontos arbitrários, são extremamente difíceis de fazer com elementos HTML regulares.
 
@@ -16,7 +16,7 @@ A segunda alternativa é chamada de *tela* . Uma tela é um único elemento DOM 
 
 ## SVG
 
-Este livro não entrará em detalhes no SVG, mas explicarei brevemente como ele funciona. No [final do capítulo](https://eloquentjavascript.net/17_canvas.html#graphics_tradeoffs) , voltarei às compensações que você deve considerar ao decidir qual mecanismo de desenho é apropriado para uma determinada aplicação.
+Este livro não entrará em detalhes no SVG, mas explicarei brevemente como ele funciona. No [https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2017%20-%20Desenho%20sobre%20tela.md) , voltarei às compensações que você deve considerar ao decidir qual mecanismo de desenho é apropriado para uma determinada aplicação.
 
 Este é um documento HTML com uma imagem SVG simples:
 
@@ -409,9 +409,9 @@ Se as chamadas para `save`e `restore`não existissem, a segunda chamada recursiv
 
 ## De volta ao jogo
 
-Agora sabemos o suficiente sobre desenho de tela para começar a trabalhar em um sistema de exibição baseado em tela para o jogo do [capítulo anterior](https://eloquentjavascript.net/16_game.html) . A nova tela não exibirá mais apenas caixas coloridas. Em vez disso, usaremos `drawImage`para desenhar figuras que representam os elementos do jogo.
+Agora sabemos o suficiente sobre desenho de tela para começar a trabalhar em um sistema de exibição baseado em tela para o jogo do [capítulo anterior](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2016%20-%20%20Projeto%20Um%20Jogo%20de%20Plataforma.md) . A nova tela não exibirá mais apenas caixas coloridas. Em vez disso, usaremos `drawImage`para desenhar figuras que representam os elementos do jogo.
 
-Definimos outro tipo de objeto de exibição chamado `CanvasDisplay`, suportando a mesma interface `DOMDisplay`do [Capítulo 16](https://eloquentjavascript.net/16_game.html#domdisplay) , a saber, os métodos `syncState`e `clear`.
+Definimos outro tipo de objeto de exibição chamado `CanvasDisplay`, suportando a mesma interface `DOMDisplay`do [Capítulo 16](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2016%20-%20%20Projeto%20Um%20Jogo%20de%20Plataforma.md#domdisplay) , a saber, os métodos `syncState`e `clear`.
 
 Este objeto mantém um pouco mais de informação do que `DOMDisplay`. Em vez de usar a posição de rolagem de seu elemento DOM, ele rastreia sua própria janela de visualização, que nos diz qual parte do nível estamos vendo atualmente. Por fim, ele mantém uma `flipPlayer`propriedade para que, mesmo quando o jogador esteja parado, fique voltado para a direção em que se mudou pela última vez.
 
@@ -494,7 +494,7 @@ CanvasDisplay.prototype.clearDisplay = function(status) {
 };
 ```
 
-Para desenhar o plano de fundo, percorremos os blocos visíveis na viewport atual, usando o mesmo truque usado no `touches`método do [capítulo anterior](https://eloquentjavascript.net/16_game.html#touches) .
+Para desenhar o plano de fundo, percorremos os blocos visíveis na viewport atual, usando o mesmo truque usado no `touches`método do [capítulo anterior](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2016%20-%20%20Projeto%20Um%20Jogo%20de%20Plataforma.md) .
 
 ```js
 let otherSprites = document.createElement("img");
@@ -650,7 +650,7 @@ Escreva um programa que desenhe as seguintes formas em uma tela:
 
 ![As formas a desenhar](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/exercise_shapes.png)
 
-Ao desenhar os dois últimos, convém consultar a explicação `Math.cos`e `Math.sin`no [Capítulo 14](https://eloquentjavascript.net/14_dom.html#sin_cos) , que descreve como obter coordenadas em um círculo usando essas funções.
+Ao desenhar os dois últimos, convém consultar a explicação `Math.cos`e `Math.sin`no [Capítulo 14](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2014%20-%20O%20Modelo%20de%20Objeto%20do%20Documento.md#sin_cos) , que descreve como obter coordenadas em um círculo usando essas funções.
 
 Eu recomendo criar uma função para cada forma. Passe a posição e, opcionalmente, outras propriedades, como o tamanho ou o número de pontos, como parâmetros. A alternativa, que é codificar números em todo o código, tende a tornar desnecessariamente difícil ler e modificar o código.
 
@@ -679,7 +679,7 @@ A estrela (5) representada é construída a partir de `quadraticCurveTo`linhas. 
 
 [No início](https://eloquentjavascript.net/17_canvas.html#pie_chart) do capítulo, vimos um programa de exemplo que desenhou um gráfico de pizza. Modifique este programa para que o nome de cada categoria seja mostrado ao lado da fatia que o representa. Tente encontrar uma maneira agradável de posicionar automaticamente esse texto que funcionaria também para outros conjuntos de dados. Você pode assumir que as categorias são grandes o suficiente para deixar amplo espaço para seus rótulos.
 
-Você pode precisar `Math.sin`e `Math.cos`mais uma vez, que são descritos no [Capítulo 14](https://eloquentjavascript.net/14_dom.html#sin_cos) .
+Você pode precisar `Math.sin`e `Math.cos`mais uma vez, que são descritos no [Capítulo 14]https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2014%20-%20O%20Modelo%20de%20Objeto%20do%20Documento.md#sin_cos) .
 
 ```html
 <canvas width="600" height="300"></canvas>
@@ -722,7 +722,7 @@ Se você não tiver certeza de como descobrir de que lado do círculo está um d
 
 ### Uma bola quicando
 
-Use a `requestAnimationFrame`técnica que vimos no [capítulo 14](https://eloquentjavascript.net/14_dom.html#animationFrame) e no [capítulo 16](https://eloquentjavascript.net/16_game.html#runAnimation) para desenhar uma caixa com uma bola quicando. A bola se move a uma velocidade constante e bate nos lados da caixa quando a atinge.
+Use a `requestAnimationFrame`técnica que vimos no [capítulo 14](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2014%20-%20O%20Modelo%20de%20Objeto%20do%20Documento.md#animationFrame) e no [capítulo 16](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2016%20-%20%20Projeto%20Um%20Jogo%20de%20Plataforma.md#runAnimation) para desenhar uma caixa com uma bola quicando. A bola se move a uma velocidade constante e bate nos lados da caixa quando a atinge.
 
 ```html
 <canvas width="400" height="400"></canvas>
@@ -747,7 +747,7 @@ Use a `requestAnimationFrame`técnica que vimos no [capítulo 14](https://eloque
 
 É fácil desenhar uma caixa `strokeRect`. Defina uma encadernação que mantenha seu tamanho ou defina duas encadernações se a largura e a altura da caixa forem diferentes. Para criar uma bola redonda, inicie um caminho e uma chamada `arc(x, y, radius, 0, 7)`, que cria um arco que vai de zero a mais do que um círculo inteiro. Em seguida, preencha o caminho.
 
-Para modelar a posição e a velocidade da bola, você pode usar a `Vec`classe do [Capítulo 16](https://eloquentjavascript.net/16_game.html#vector) (que está disponível nesta página). Dê a ela uma velocidade inicial, de preferência uma que não seja puramente vertical ou horizontal, e para cada quadro multiplique essa velocidade pela quantidade de tempo decorrido. Quando a bola se aproximar demais de uma parede vertical, inverta o componente x em sua velocidade. Da mesma forma, inverta o componente y quando atingir uma parede horizontal.
+Para modelar a posição e a velocidade da bola, você pode usar a `Vec`classe do [Capítulo 16]https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2016%20-%20%20Projeto%20Um%20Jogo%20de%20Plataforma.md#vector) (que está disponível nesta página). Dê a ela uma velocidade inicial, de preferência uma que não seja puramente vertical ou horizontal, e para cada quadro multiplique essa velocidade pela quantidade de tempo decorrido. Quando a bola se aproximar demais de uma parede vertical, inverta o componente x em sua velocidade. Da mesma forma, inverta o componente y quando atingir uma parede horizontal.
 
 Depois de encontrar a nova posição e velocidade da bola, use `clearRect`para excluir a cena e redesenhá-la usando a nova posição.
 
