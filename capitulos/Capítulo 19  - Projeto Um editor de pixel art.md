@@ -44,7 +44,7 @@ Cada componente possui um `syncState`método usado para sincronizá-lo com um no
 
 ## O Estado
 
-O estado da aplicação será um objecto com `picture`, `tool`e `color`propriedades. A própria imagem é um objeto que armazena a largura, a altura e o conteúdo de pixels da imagem. Os pixels são armazenados em uma matriz, da mesma maneira que a classe da matriz do [Capítulo 6 -](https://eloquentjavascript.net/06_object.html) linha por linha, de cima para baixo.
+O estado da aplicação será um objecto com `picture`, `tool`e `color`propriedades. A própria imagem é um objeto que armazena a largura, a altura e o conteúdo de pixels da imagem. Os pixels são armazenados em uma matriz, da mesma maneira que a classe da matriz do [Capítulo 6 -](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2006%20-%20A%20Vida%20Secreta%20dos%20Objetos.md) linha por linha, de cima para baixo.
 
 ```css
 class Picture {
@@ -104,7 +104,7 @@ function elt(type, props, ...children) {
 }
 ```
 
-A principal diferença entre esta versão e a que usamos no [Capítulo 16](https://eloquentjavascript.net/16_game.html#domdisplay) é que ela atribui *propriedades* a nós DOM, não a *atributos* . Isso significa que não pode usá-lo para definir atributos arbitrários, mas *pode* usá-lo para definir propriedades cujo valor não é uma string, tais como `onclick`, o que pode ser definida como uma função para registrar um manipulador de eventos clique.
+A principal diferença entre esta versão e a que usamos no [Capítulo 16](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2016%20-%20%20Projeto%20Um%20Jogo%20de%20Plataforma.md) é que ela atribui *propriedades* a nós DOM, não a *atributos* . Isso significa que não pode usá-lo para definir atributos arbitrários, mas *pode* usá-lo para definir propriedades cujo valor não é uma string, tais como `onclick`, o que pode ser definida como uma função para registrar um manipulador de eventos clique.
 
 Isso permite o seguinte estilo de registrar manipuladores de eventos:
 
@@ -339,7 +339,7 @@ A implementação do preenchimento de cheias está um pouco mais envolvida. Essa
 
 ![Uma grade de pixels mostrando a área preenchida por uma operação de preenchimento de inundação](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/flood-grid.svg)
 
-Curiosamente, a maneira como faremos isso se parece um pouco com o código de localização de caminhos do [Capítulo 7](https://eloquentjavascript.net/07_robot.html) . Enquanto esse código pesquisava um gráfico para encontrar uma rota, esse código pesquisava uma grade para encontrar todos os pixels "conectados". O problema de acompanhar um conjunto ramificado de rotas possíveis é semelhante.
+Curiosamente, a maneira como faremos isso se parece um pouco com o código de localização de caminhos do [Capítulo 7](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2007%20-%20Projeto%20Um%20Rob%C3%B4.md) . Enquanto esse código pesquisava um gráfico para encontrar uma rota, esse código pesquisava uma grade para encontrar todos os pixels "conectados". O problema de acompanhar um conjunto ramificado de rotas possíveis é semelhante.
 
 ```js
 const around = [{dx: -1, dy: 0}, {dx: 1, dy: 0},
