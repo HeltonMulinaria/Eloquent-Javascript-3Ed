@@ -56,7 +56,7 @@ Essa estrutura de dados é chamada de *árvore de sintaxe* . Se você imaginar o
 
 ![A estrutura de uma árvore de sintaxe](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/syntax_tree.svg)
 
-Compare isso com o analisador que escrevemos para o formato do arquivo de configuração no [Capítulo 9](https://eloquentjavascript.net/09_regexp.html#ini) , que tinha uma estrutura simples: dividia a entrada em linhas e manipulava essas linhas uma por vez. Havia apenas algumas formas simples que uma linha podia ter.
+Compare isso com o analisador que escrevemos para o formato do arquivo de configuração no [Capítulo 9](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2009%20-%20Express%C3%B5es%20regulares.md#ini) , que tinha uma estrutura simples: dividia a entrada em linhas e manipulava essas linhas uma por vez. Havia apenas algumas formas simples que uma linha podia ter.
 
 Aqui devemos encontrar uma abordagem diferente. As expressões não são separadas em linhas e possuem uma estrutura recursiva. Expressões de aplicativo *contêm* outras expressões.
 
@@ -183,7 +183,7 @@ O avaliador possui código para cada um dos tipos de expressão. Uma expressão 
 
 Os aplicativos estão mais envolvidos. Se eles são uma forma especial, como `if`, não avaliamos nada e passamos as expressões de argumento, juntamente com o escopo, para a função que lida com essa forma. Se for uma chamada normal, avaliamos o operador, verificamos que é uma função e a chamamos com os argumentos avaliados.
 
-Usamos valores simples da função JavaScript para representar os valores da função do Egg. Voltaremos a isso [mais tarde](https://eloquentjavascript.net/12_language.html#egg_fun) , quando o formulário especial chamado `fun`for definido.
+Usamos valores simples da função JavaScript para representar os valores da função do Egg. Voltaremos a isso [mais tarde](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2012%20-%20Uma%20linguagem%20de%20programa%C3%A7%C3%A3o.md#egg_fun) , quando o formulário especial chamado `fun`for definido.
 
 A estrutura recursiva de se `evaluate`assemelha à estrutura semelhante do analisador, e ambos espelham a estrutura da própria linguagem. Também seria possível integrar o analisador ao avaliador e avaliar durante a análise, mas dividi-los dessa maneira torna o programa mais claro.
 

@@ -32,9 +32,9 @@ O código relacionado à tela e ao teclado é apenas uma pequena parte do trabal
 
 Podemos representar o plano de fundo como uma tabela, pois é uma grade imutável de quadrados. Os elementos móveis podem ser sobrepostos usando elementos absolutamente posicionados.
 
-Em jogos e outros programas que devem animar gráficos e responder à entrada do usuário sem demora perceptível, a eficiência é importante. Embora o DOM não tenha sido projetado originalmente para gráficos de alto desempenho, ele é realmente melhor do que o esperado. Você viu algumas animações no [capítulo 14](https://eloquentjavascript.net/14_dom.html#animation) . Em uma máquina moderna, um jogo simples como esse funciona bem, mesmo que não nos preocupemos muito com a otimização.
+Em jogos e outros programas que devem animar gráficos e responder à entrada do usuário sem demora perceptível, a eficiência é importante. Embora o DOM não tenha sido projetado originalmente para gráficos de alto desempenho, ele é realmente melhor do que o esperado. Você viu algumas animações no [https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2014%20-%20O%20Modelo%20de%20Objeto%20do%20Documento.md#animation) . Em uma máquina moderna, um jogo simples como esse funciona bem, mesmo que não nos preocupemos muito com a otimização.
 
-No [próximo capítulo](https://eloquentjavascript.net/17_canvas.html) , exploraremos outra tecnologia de navegador, a ``tag, que fornece uma maneira mais tradicional de desenhar gráficos, trabalhando em termos de formas e pixels em vez de elementos DOM.
+No [próximo capítulo](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2017%20-%20Desenho%20sobre%20tela.md) , exploraremos outra tecnologia de navegador, a ``tag, que fornece uma maneira mais tradicional de desenhar gráficos, trabalhando em termos de formas e pixels em vez de elementos DOM.
 
 ## Níveis
 
@@ -94,7 +94,7 @@ Para criar essas matrizes, mapeamos as linhas e, em seguida, o conteúdo delas. 
 
 Para interpretar os caracteres no plano, o `Level`construtor usa o `levelChars`objeto, que mapeia elementos de segundo plano para seqüências de caracteres e caracteres de ator para classes. Quando `type`é uma classe de ator, seu `create`método estático é usado para criar um objeto ao qual é adicionado `startActors`e a função de mapeamento retorna `"empty"`para esse quadrado de plano de fundo.
 
-A posição do ator é armazenada como um `Vec`objeto. Este é um vetor bidimensional, um objeto com `x`e `y`propriedades, como visto nos exercícios do [Capítulo 6](https://eloquentjavascript.net/06_object.html#exercise_vector) .
+A posição do ator é armazenada como um `Vec`objeto. Este é um vetor bidimensional, um objeto com `x`e `y`propriedades, como visto nos exercícios do [Capítulo 6](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2006%20-%20A%20Vida%20Secreta%20dos%20Objetos.md#exercise_vector) .
 
 À medida que o jogo corre, os atores acabam em lugares diferentes ou até desaparecem completamente (como as moedas quando coletadas). Usaremos uma `State`classe para rastrear o estado de um jogo em execução.
 
@@ -224,7 +224,7 @@ class Coin {
 Coin.prototype.size = new Vec(0.6, 0.6);
 ```
 
-No [capítulo 14](https://eloquentjavascript.net/14_dom.html#sin_cos) , vimos que `Math.sin`nos dá a coordenada y de um ponto em um círculo. Essa coordenada vai e volta em uma forma de onda suave à medida que avançamos ao longo do círculo, o que torna a função seno útil para modelar um movimento ondulado.
+No [capítulo 14](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2014%20-%20O%20Modelo%20de%20Objeto%20do%20Documento.md#sin_cos) , vimos que `Math.sin`nos dá a coordenada y de um ponto em um círculo. Essa coordenada vai e volta em uma forma de onda suave à medida que avançamos ao longo do círculo, o que torna a função seno útil para modelar um movimento ondulado.
 
 Para evitar uma situação em que todas as moedas se movam para cima e para baixo de forma síncrona, a fase inicial de cada moeda é aleatória. A *fase* da `Math.sin`onda de, a largura de uma onda que produz, é 2π. Multiplicamos o valor retornado por `Math.random`esse número para dar à moeda uma posição inicial aleatória na onda.
 
@@ -256,7 +256,7 @@ Segundo, os vários elementos deste jogo estão tão intimamente ligados que, se
 
 Alguns *pontos de corte* em um sistema se prestam bem à separação por meio de interfaces rigorosas, mas outros não. Tentar encapsular algo que não é um limite adequado é uma maneira de desperdiçar muita energia. Quando você está cometendo esse erro, geralmente percebe que suas interfaces estão ficando desajeitadamente grandes e detalhadas e que precisam ser alteradas com frequência, à medida que o programa evolui.
 
-Há uma coisa que *vai* encapsular, e que é o subsistema de desenho. A razão para isso é que exibiremos o mesmo jogo de uma maneira diferente no [próximo capítulo](https://eloquentjavascript.net/17_canvas.html#canvasdisplay) . Ao colocar o desenho atrás de uma interface, podemos carregar o mesmo programa de jogo e conectar um novo módulo de exibição.
+Há uma coisa que *vai* encapsular, e que é o subsistema de desenho. A razão para isso é que exibiremos o mesmo jogo de uma maneira diferente no [próximo capítulo](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2017%20-%20Desenho%20sobre%20tela.md#canvasdisplay) . Ao colocar o desenho atrás de uma interface, podemos carregar o mesmo programa de jogo e conectar um novo módulo de exibição.
 
 ## Desenhando
 

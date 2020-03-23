@@ -190,11 +190,11 @@ As teclas modificadoras, como shift , control , alt e meta ( comando no Mac), ge
 </script>
 ```
 
-O nó DOM em que um evento de chave se origina depende do elemento em foco quando a tecla é pressionada. A maioria dos nós não pode ter foco, a menos que você atribua a eles um `tabindex`atributo, mas coisas como links, botões e campos de formulário podem. Voltaremos aos campos de formulário no [capítulo 18](https://eloquentjavascript.net/18_http.html#forms) . Quando nada em particular tem foco, `document.body`atua como o nó de destino dos principais eventos.
+O nó DOM em que um evento de chave se origina depende do elemento em foco quando a tecla é pressionada. A maioria dos nós não pode ter foco, a menos que você atribua a eles um `tabindex`atributo, mas coisas como links, botões e campos de formulário podem. Voltaremos aos campos de formulário no [capítulo 18](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2018%20-%20%20HTTP%20e%20formul%C3%A1rios.md#forms) . Quando nada em particular tem foco, `document.body`atua como o nó de destino dos principais eventos.
 
 Quando o usuário está digitando texto, é problemático o uso de eventos importantes para descobrir o que está sendo digitado. Algumas plataformas, principalmente o teclado virtual em telefones Android, não acionam eventos importantes. Mas mesmo quando você possui um teclado antiquado, alguns tipos de entrada de texto não correspondem às teclas pressionadas de maneira direta, como o software IME ( *Input Method Editor* ) usado por pessoas cujos scripts não cabem no teclado, onde várias teclas são combinadas para criar caracteres.
 
-Para observar quando algo foi digitado, os elementos nos quais você pode digitar, como as tags ``e ``, acionam `"input"`eventos sempre que o usuário altera seu conteúdo. Para obter o conteúdo real digitado, é melhor lê-lo diretamente no campo em foco. [O capítulo 18](https://eloquentjavascript.net/18_http.html#forms) mostrará como.
+Para observar quando algo foi digitado, os elementos nos quais você pode digitar, como as tags ``e ``, acionam `"input"`eventos sempre que o usuário altera seu conteúdo. Para obter o conteúdo real digitado, é melhor lê-lo diretamente no campo em foco. [O capítulo 18](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2018%20-%20%20HTTP%20e%20formul%C3%A1rios.md#forms) mostrará como.
 
 ## Eventos de ponteiro
 
@@ -210,7 +210,7 @@ Se dois cliques acontecerem juntos, um `"dblclick"`evento (clique duplo) também
 
 Para obter informações precisas sobre o local em que um evento do mouse ocorreu, você pode observar as propriedades `clientX`e `clientY`, que contêm as coordenadas do evento (em pixels) em relação ao canto superior esquerdo da janela ou `pageX`e e em `pageY`relação ao topo canto esquerdo do documento inteiro (que pode ser diferente quando a janela foi rolada).
 
-A seguir, implementa um programa de desenho primitivo. Sempre que você clica no documento, ele adiciona um ponto ao ponteiro do mouse. Veja o [Capítulo 19](https://eloquentjavascript.net/19_paint.html) para um programa de desenho menos primitivo.
+A seguir, implementa um programa de desenho primitivo. Sempre que você clica no documento, ele adiciona um ponto ao ponteiro do mouse. Veja o [Capítulo 19](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2019%20%20-%20Projeto%20Um%20editor%20de%20pixel%20art.md) para um programa de desenho menos primitivo.
 
 ```html
 <style>
@@ -393,7 +393,7 @@ Quando uma página é fechada ou afastada (por exemplo, seguindo um link), um `"
 
 ## Eventos e o loop de eventos
 
-No contexto do loop de eventos, conforme discutido no [Capítulo 11](https://eloquentjavascript.net/11_async.html) , os manipuladores de eventos do navegador se comportam como outras notificações assíncronas. Eles são agendados quando o evento ocorre, mas devem aguardar a conclusão de outros scripts em execução antes que eles possam executar.
+No contexto do loop de eventos, conforme discutido no [Capítulo 11](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2011%20-%20Programa%C3%A7%C3%A3o%20ass%C3%ADncrona.md) , os manipuladores de eventos do navegador se comportam como outras notificações assíncronas. Eles são agendados quando o evento ocorre, mas devem aguardar a conclusão de outros scripts em execução antes que eles possam executar.
 
 O fato de que os eventos podem ser processados somente quando nada mais estiver em execução significa que, se o loop de eventos estiver vinculado a outro trabalho, qualquer interação com a página (que ocorre por meio de eventos) será adiada até que haja tempo para processá-lo. Portanto, se você agendar muito trabalho, seja com manipuladores de eventos de longa duração ou com muitos de curta duração, a página ficará lenta e complicada de usar.
 
@@ -424,7 +424,7 @@ A `postMessage`função envia uma mensagem, o que fará com que um `"message"`ev
 
 ## Temporizadores
 
-Vimos a `setTimeout`função no [capítulo 11](https://eloquentjavascript.net/11_async.html) . Ele agenda outra função a ser chamada posteriormente, após um determinado número de milissegundos.
+Vimos a `setTimeout`função no [capítulo 11](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2011%20-%20Programa%C3%A7%C3%A3o%20ass%C3%ADncrona.md) . Ele agenda outra função a ser chamada posteriormente, após um determinado número de milissegundos.
 
 Às vezes, você precisa cancelar uma função que agendou. Isso é feito armazenando o valor retornado `setTimeout`e chamando `clearTimeout`-o.
 
@@ -538,7 +538,7 @@ Nos primórdios do JavaScript, que era o momento das home pages berrantes com mu
 
 Uma delas era a *trilha* do *mouse* - uma série de elementos que seguiriam o ponteiro do mouse à medida que você o movia pela página.
 
-Neste exercício, quero que você implemente uma trilha de mouse. Use ``elementos absolutamente posicionados com tamanho fixo e cor de fundo (consulte o [código](https://eloquentjavascript.net/15_event.html#mouse_drawing) na seção "Cliques do mouse" para obter um exemplo). Crie vários desses elementos e, quando o mouse se mover, exiba-os na sequência do ponteiro do mouse.
+Neste exercício, quero que você implemente uma trilha de mouse. Use ``elementos absolutamente posicionados com tamanho fixo e cor de fundo (consulte o [código]https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2015%20-%20Tratamento%20de%20eventos.md#mouse_drawing) na seção "Cliques do mouse" para obter um exemplo). Crie vários desses elementos e, quando o mouse se mover, exiba-os na sequência do ponteiro do mouse.
 
 Existem várias abordagens possíveis aqui. Você pode tornar sua solução tão simples ou complexa quanto desejar. Uma solução simples para começar é manter um número fixo de elementos da trilha e percorrê-los, movendo o próximo para a posição atual do mouse toda vez `"mousemove"`que ocorrer um evento.
 

@@ -18,7 +18,7 @@ A frase “grande bola de barro” é frequentemente usada para programas grande
 
 *Módulos* são uma tentativa de evitar esses problemas. Um módulo é um pedaço de programa que especifica em quais outros pedaços ele se baseia e em qual funcionalidade ele fornece para outros módulos usarem (sua *interface* ).
 
-As interfaces de módulo têm muito em comum com as interfaces de objetos, como vimos no [Capítulo 6](https://eloquentjavascript.net/06_object.html#interface) . Eles fazem parte do módulo disponível para o mundo exterior e mantêm o restante em sigilo. Ao restringir a maneira como os módulos interagem entre si, o sistema se torna mais como LEGO, onde as peças interagem por meio de conectores bem definidos e menos como lama, onde tudo se mistura com tudo.
+As interfaces de módulo têm muito em comum com as interfaces de objetos, como vimos no [Capítulo 6](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2006%20-%20A%20Vida%20Secreta%20dos%20Objetos.md#interface) . Eles fazem parte do módulo disponível para o mundo exterior e mantêm o restante em sigilo. Ao restringir a maneira como os módulos interagem entre si, o sistema se torna mais como LEGO, onde as peças interagem por meio de conectores bem definidos e menos como lama, onde tudo se mistura com tudo.
 
 As relações entre os módulos são chamadas de *dependências* . Quando um módulo precisa de uma peça de outro módulo, diz-se que depende desse módulo. Quando esse fato é claramente especificado no próprio módulo, ele pode ser usado para descobrir quais outros módulos precisam estar presentes para poder usar um determinado módulo e carregar automaticamente dependências.
 
@@ -32,7 +32,7 @@ Projetar uma estrutura de módulo de encaixe para um programa pode ser difícil.
 
 Uma das vantagens de criar um programa com partes separadas e ser capaz de executá-las por conta própria é que você poderá aplicar a mesma peça em programas diferentes.
 
-Mas como você configura isso? Digamos que eu queira usar a `parseINI`função do [Capítulo 9](https://eloquentjavascript.net/09_regexp.html#ini) em outro programa. Se estiver claro do que a função depende (neste caso, nada), posso copiar todo o código necessário no meu novo projeto e usá-lo. Porém, se eu encontrar um erro nesse código, provavelmente o corrigirei em qualquer programa com o qual estou trabalhando no momento e esquecerei de corrigi-lo também no outro programa.
+Mas como você configura isso? Digamos que eu queira usar a `parseINI`função do [Capítulo 9](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2009%20-%20Express%C3%B5es%20regulares.md#ini) em outro programa. Se estiver claro do que a função depende (neste caso, nada), posso copiar todo o código necessário no meu novo projeto e usá-lo. Porém, se eu encontrar um erro nesse código, provavelmente o corrigirei em qualquer programa com o qual estou trabalhando no momento e esquecerei de corrigi-lo também no outro programa.
 
 Depois de começar a duplicar o código, você rapidamente estará perdendo tempo e energia movendo cópias e mantendo-as atualizadas.
 
@@ -44,9 +44,9 @@ Trabalhar dessa maneira requer infraestrutura. Precisamos de um local para armaz
 
 O NPM é duas coisas: um serviço online no qual é possível fazer o download (e fazer upload) de pacotes e um programa (fornecido com o Node.js.) que ajuda a instalar e gerenciar os pacotes.
 
-No momento da redação deste artigo, existem mais de meio milhão de pacotes diferentes disponíveis no NPM. Uma grande parte deles é lixo, devo mencionar, mas quase todos os pacotes úteis e publicamente disponíveis podem ser encontrados lá. Por exemplo, um analisador de arquivo INI, semelhante ao que construímos no [Capítulo 9](https://eloquentjavascript.net/09_regexp.html) , está disponível sob o nome do pacote `ini`.
+No momento da redação deste artigo, existem mais de meio milhão de pacotes diferentes disponíveis no NPM. Uma grande parte deles é lixo, devo mencionar, mas quase todos os pacotes úteis e publicamente disponíveis podem ser encontrados lá. Por exemplo, um analisador de arquivo INI, semelhante ao que construímos no [Capítulo 9](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2009%20-%20Express%C3%B5es%20regulares.md) , está disponível sob o nome do pacote `ini`.
 
-[O capítulo 20](https://eloquentjavascript.net/20_node.html) mostrará como instalar esses pacotes localmente usando o `npm`programa de linha de comando.
+[O capítulo 20](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2020%20-%20Node.js.md) mostrará como instalar esses pacotes localmente usando o `npm`programa de linha de comando.
 
 Ter pacotes de qualidade disponíveis para download é extremamente valioso. Isso significa que muitas vezes podemos evitar a reinvenção de um programa que 100 pessoas escreveram antes e obter uma implementação sólida e bem testada ao pressionar algumas teclas.
 
@@ -178,7 +178,7 @@ Ao definir `require`, `exports`e `module`como parâmetros para a função do wra
 
 A maneira como a string atribuída `require`é traduzida para um nome de arquivo ou endereço da Web real difere em diferentes sistemas. Quando começa com `"./"`ou `"../"`, geralmente é interpretado como relativo ao nome do arquivo do módulo atual. Assim seria o arquivo nomeado no mesmo diretório.`"./format-date"``format-date.js`
 
-Quando o nome não é relativo, o Node.js procurará um pacote instalado com esse nome. No código de exemplo deste capítulo, interpretaremos nomes como se referindo a pacotes NPM. Entraremos em mais detalhes sobre como instalar e usar os módulos NPM no [Capítulo 20](https://eloquentjavascript.net/20_node.html) .
+Quando o nome não é relativo, o Node.js procurará um pacote instalado com esse nome. No código de exemplo deste capítulo, interpretaremos nomes como se referindo a pacotes NPM. Entraremos em mais detalhes sobre como instalar e usar os módulos NPM no [Capítulo 20](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2020%20-%20Node.js.md) .
 
 Agora, em vez de escrever nosso próprio analisador de arquivos INI, podemos usar um do NPM.
 
@@ -233,7 +233,7 @@ Muitos projetos são gravados usando módulos ES e depois convertidos automatica
 
 ## Construção e agrupamento
 
-De fato, muitos projetos JavaScript não são, tecnicamente, escritos em JavaScript. Existem ramais, como o dialeto de verificação de tipo mencionado no [Capítulo 8](https://eloquentjavascript.net/08_error.html#typing) , que são amplamente utilizados. As pessoas também costumam começar a usar extensões planejadas para o idioma muito antes de serem adicionadas às plataformas que realmente executam JavaScript.
+De fato, muitos projetos JavaScript não são, tecnicamente, escritos em JavaScript. Existem ramais, como o dialeto de verificação de tipo mencionado no [Capítulo 8](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2008%20-%20Bugs%20e%20erros.md#typing) , que são amplamente utilizados. As pessoas também costumam começar a usar extensões planejadas para o idioma muito antes de serem adicionadas às plataformas que realmente executam JavaScript.
 
 Para tornar isso possível, eles *compilam* seu código, convertendo-o do dialeto JavaScript escolhido para JavaScript antigo simples - ou mesmo para uma versão anterior do JavaScript - para que navegadores antigos possam executá-lo.
 
@@ -261,7 +261,7 @@ De maneira semelhante, os objetos com estado são algumas vezes úteis ou até n
 
 Freqüentemente, a definição de novas estruturas de dados não pode ser evitada - apenas algumas básicas são fornecidas pelo padrão da linguagem e muitos tipos de dados precisam ser mais complexos que uma matriz ou um mapa. Mas quando uma matriz é suficiente, use uma matriz.
 
-Um exemplo de uma estrutura de dados um pouco mais complexa é o gráfico do [Capítulo 7](https://eloquentjavascript.net/07_robot.html) . Não existe uma maneira óbvia de representar um gráfico em JavaScript. Nesse capítulo, usamos um objeto cujas propriedades contêm matrizes de strings - os outros nós alcançáveis a partir desse nó.
+Um exemplo de uma estrutura de dados um pouco mais complexa é o gráfico do [Capítulo 7](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2007%20-%20Projeto%20Um%20Rob%C3%B4.md) . Não existe uma maneira óbvia de representar um gráfico em JavaScript. Nesse capítulo, usamos um objeto cujas propriedades contêm matrizes de strings - os outros nós alcançáveis a partir desse nó.
 
 Existem vários pacotes de busca de caminho diferentes no NPM, mas nenhum deles usa esse formato gráfico. Eles geralmente permitem que as arestas do gráfico tenham um peso, que é o custo ou a distância associada a ele. Isso não é possível em nossa representação.
 
@@ -298,7 +298,7 @@ Um pacote é um pedaço de código que pode ser distribuído por si próprio. O 
 
 ### Um robô modular
 
-Estas são as ligações que o projeto do [Capítulo 7](https://eloquentjavascript.net/07_robot.html) cria:
+Estas são as ligações que o projeto do [Capítulo 7](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2007%20-%20Projeto%20Um%20Rob%C3%B4.md) cria:
 
 ```
 estradas
@@ -338,7 +338,7 @@ Então, novamente, isso é uma troca, e você pode decidir de qualquer maneira, 
 
 ### Módulo de estradas
 
-Escreva um módulo CommonJS, com base no exemplo do [Capítulo 7](https://eloquentjavascript.net/07_robot.html) , que contém a matriz de estradas e exporta a estrutura de dados do gráfico que os representa como `roadGraph`. Deve depender de um módulo `./graph`, que exporte uma função `buildGraph`que é usada para criar o gráfico. Esta função espera uma matriz de matrizes de dois elementos (os pontos inicial e final das estradas).
+Escreva um módulo CommonJS, com base no exemplo do [Capítulo 7](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2007%20-%20Projeto%20Um%20Rob%C3%B4.md) , que contém a matriz de estradas e exporta a estrutura de dados do gráfico que os representa como `roadGraph`. Deve depender de um módulo `./graph`, que exporte uma função `buildGraph`que é usada para criar o gráfico. Esta função espera uma matriz de matrizes de dois elementos (os pontos inicial e final das estradas).
 
 ```js
 // Add dependencies and exports
@@ -364,7 +364,7 @@ Uma dependência circular é uma situação em que o módulo A depende de B e B 
 
 Os módulos CommonJS permitem uma forma limitada de dependências cíclicas. Contanto que os módulos não substituam seu `exports`objeto padrão e não acessem a interface um do outro até que eles terminem de carregar, as dependências cíclicas estarão bem.
 
-A `require`função fornecida [anteriormente neste capítulo](https://eloquentjavascript.net/10_modules.html#require) suporta esse tipo de ciclo de dependência. Você pode ver como ele lida com os ciclos? O que iria dar errado quando um módulo em um ciclo de *não* substituir o seu padrão `exports`objeto?
+A `require`função fornecida [anteriormente neste capítulo](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2010%20-%20M%C3%B3dulos.md#require) suporta esse tipo de ciclo de dependência. Você pode ver como ele lida com os ciclos? O que iria dar errado quando um módulo em um ciclo de *não* substituir o seu padrão `exports`objeto?
 
 O truque é que `require`adiciona módulos ao cache *antes de* começar a carregar o módulo. Dessa forma, se qualquer `require`chamada feita enquanto estiver em execução tentar carregá-la, ela já será conhecida e a interface atual será retornada, em vez de começar a carregar o módulo mais uma vez (o que acabaria sobrecarregando a pilha).
 

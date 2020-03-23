@@ -140,7 +140,7 @@ O arquivo *code / hello.js* incluído aqui contém o mesmo programa— `alert("h
 
 Uma tag de script sempre deve ser fechada ``, mesmo que se refira a um arquivo de script e não contenha nenhum código. Se você esquecer isso, o restante da página será interpretado como parte do script.
 
-Você pode carregar os módulos ES (consulte o [Capítulo 10](https://eloquentjavascript.net/10_modules.html#es) ) no navegador, atribuindo um `type="module"`atributo à sua tag de script . Esses módulos podem depender de outros módulos usando URLs relativas a si mesmos como nomes de módulo nas `import`declarações.
+Você pode carregar os módulos ES (consulte o [Capítulo 10](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2010%20-%20M%C3%B3dulos.md#es) ) no navegador, atribuindo um `type="module"`atributo à sua tag de script . Esses módulos podem depender de outros módulos usando URLs relativas a si mesmos como nomes de módulo nas `import`declarações.
 
 Alguns atributos também podem conter um programa JavaScript. A ``tag mostrada a seguir (que aparece como um botão) tem um `onclick`atributo. O valor do atributo será executado sempre que o botão for clicado.
 

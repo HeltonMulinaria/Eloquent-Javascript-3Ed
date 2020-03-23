@@ -6,13 +6,13 @@
 
 ![Imagem de uma árvore com letras e scripts pendurados em seus galhos](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/img/chapter_picture_14.jpg)
 
-Quando você abre uma página da web em seu navegador, o navegador recupera o texto HTML da página e o analisa, da mesma forma que nosso analisador do [Capítulo 12](https://eloquentjavascript.net/12_language.html#parsing) analisou os programas. O navegador cria um modelo da estrutura do documento e usa esse modelo para desenhar a página na tela.
+Quando você abre uma página da web em seu navegador, o navegador recupera o texto HTML da página e o analisa, da mesma forma que nosso analisador do [Capítulo 12](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2012%20-%20Uma%20linguagem%20de%20programa%C3%A7%C3%A3o.md#parsing) analisou os programas. O navegador cria um modelo da estrutura do documento e usa esse modelo para desenhar a página na tela.
 
 Essa representação do documento é um dos brinquedos que um programa JavaScript tem disponível em sua sandbox. É uma estrutura de dados que você pode ler ou modificar. Ele atua como uma estrutura de dados *ativa* : quando é modificada, a página na tela é atualizada para refletir as alterações.
 
 ## Estrutura do documento
 
-Você pode imaginar um documento HTML como um conjunto aninhado de caixas. Tags como ``e ``incluem outras tags, que por sua vez contêm outras tags ou texto. Aqui está o documento de exemplo do [capítulo anterior](https://eloquentjavascript.net/13_browser.html) :
+Você pode imaginar um documento HTML como um conjunto aninhado de caixas. Tags como ``e ``incluem outras tags, que por sua vez contêm outras tags ou texto. Aqui está o documento de exemplo do [capítulo anterior](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2013%20-%20JavaScript%20e%20o%20Navegador.md) :
 
 ```html
 <!doctype html>
@@ -39,13 +39,13 @@ A ligação global `document`nos dá acesso a esses objetos. Sua `documentElemen
 
 ## Árvores
 
-Pense nas árvores de sintaxe do [Capítulo 12](https://eloquentjavascript.net/12_language.html#parsing) por um momento. Suas estruturas são surpreendentemente semelhantes à estrutura do documento de um navegador. Cada *nó* pode se referir a outros nós, *filhos* , que por sua vez podem ter seus próprios filhos. Essa forma é típica de estruturas aninhadas, em que os elementos podem conter subelementos semelhantes a si mesmos.
+Pense nas árvores de sintaxe do [Capítulo 12](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2012%20-%20Uma%20linguagem%20de%20programa%C3%A7%C3%A3o.md#parsing) por um momento. Suas estruturas são surpreendentemente semelhantes à estrutura do documento de um navegador. Cada *nó* pode se referir a outros nós, *filhos* , que por sua vez podem ter seus próprios filhos. Essa forma é típica de estruturas aninhadas, em que os elementos podem conter subelementos semelhantes a si mesmos.
 
 Chamamos uma estrutura de dados de *árvore* quando ela possui uma estrutura de ramificação, não possui ciclos (um nó pode não se conter, direta ou indiretamente) e possui uma única *raiz* bem definida . No caso do DOM, serve como raiz.`document.documentElement`
 
 As árvores surgem muito na ciência da computação. Além de representar estruturas recursivas, como documentos ou programas HTML, eles são frequentemente usados para manter conjuntos de dados classificados, porque os elementos geralmente podem ser encontrados ou inseridos com mais eficiência em uma árvore do que em uma matriz plana.
 
-Uma árvore típica possui diferentes tipos de nós. A árvore de sintaxe [da linguagem Egg](https://eloquentjavascript.net/12_language.html) tinha identificadores, valores e nós de aplicativos. Nós de aplicativo podem ter filhos, enquanto identificadores e valores são *folhas* ou nós sem filhos.
+Uma árvore típica possui diferentes tipos de nós. A árvore de sintaxe [da linguagem Egg](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2012%20-%20Uma%20linguagem%20de%20programa%C3%A7%C3%A3o.md) tinha identificadores, valores e nós de aplicativos. Nós de aplicativo podem ter filhos, enquanto identificadores e valores são *folhas* ou nós sem filhos.
 
 O mesmo vale para o DOM. Nós para *elementos* , que representam tags HTML, determinam a estrutura do documento. Estes podem ter nós filhos. Um exemplo desse nó é `document.body`. Alguns desses filhos podem ser nós de folha, como partes de texto ou de comentários.
 
@@ -550,7 +550,7 @@ Para encontrar o nome da marca de um elemento, use sua `nodeName`propriedade Mas
 </script>
 ```
 
-A solução é mais facilmente expressa com uma função recursiva, semelhante à [`talksAbout`função](https://eloquentjavascript.net/14_dom.html#talksAbout) definida anteriormente neste capítulo.
+A solução é mais facilmente expressa com uma função recursiva, semelhante à [`talksAbout`função](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2014%20-%20O%20Modelo%20de%20Objeto%20do%20Documento.md#talksAbout) definida anteriormente neste capítulo.
 
 Você poderia se chamar `byTagname`recursivamente, concatenando as matrizes resultantes para produzir a saída. Ou você pode criar uma função interna que se chama recursivamente e que tenha acesso a uma ligação de matriz definida na função externa, à qual pode adicionar os elementos correspondentes que encontrar. Não se esqueça de chamar a função interna uma vez a partir da função externa para iniciar o processo.
 
@@ -558,7 +558,7 @@ A função recursiva deve verificar o tipo de nó. Aqui, estamos interessados ap
 
 ### O chapéu do gato
 
-Estenda a animação do gato definida [anteriormente](https://eloquentjavascript.net/14_dom.html#animation) para que o gato e seu chapéu ( ) orbitam em lados opostos da elipse.``
+Estenda a animação do gato definida [anteriormente](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2014%20-%20O%20Modelo%20de%20Objeto%20do%20Documento.md#animation) para que o gato e seu chapéu ( ) orbitam em lados opostos da elipse.``
 
 Ou faça o chapéu circular em torno do gato. Ou altere a animação de alguma outra maneira interessante.
 

@@ -359,7 +359,7 @@ A comparação usa `JSON.stringify`porque `==`, em objetos ou matrizes, retornar
 
 Os nós começam imediatamente a transmitir suas conexões, o que deve, a menos que alguns ninhos sejam completamente inacessíveis, fornecer rapidamente a cada ninho um mapa do gráfico de rede atual.
 
-Uma coisa que você pode fazer com os gráficos é encontrar rotas neles, como vimos no [Capítulo 7](https://eloquentjavascript.net/07_robot.html) . Se temos uma rota em direção ao destino de uma mensagem, sabemos em que direção enviá-la.
+Uma coisa que você pode fazer com os gráficos é encontrar rotas neles, como vimos no [Capítulo 7]https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2007%20-%20Projeto%20Um%20Rob%C3%B4.md) . Se temos uma rota em direção ao destino de uma mensagem, sabemos em que direção enviá-la.
 
 Essa `findRoute`função, que se assemelha bastante à `findRoute`do [Capítulo 7](https://eloquentjavascript.net/07_robot.html#findRoute) , procura uma maneira de alcançar um determinado nó na rede. Mas, em vez de retornar a rota inteira, apenas retorna o próximo passo. Que no próximo ninho em si vai, usando suas informações atuais sobre a rede, decidir onde *ele* envia a mensagem.
 
@@ -515,7 +515,7 @@ for (let power of powers(3)) {
 
 Inicialmente, quando você chama `powers`, a função é congelada no início. Toda vez que você chama `next`o iterador, a função é executada até atingir uma `yield`expressão, que a pausa e faz com que o valor produzido se torne o próximo valor produzido pelo iterador. Quando a função retorna (a que nunca aparece no exemplo), o iterador está pronto.
 
-Escrever iteradores geralmente é muito mais fácil quando você usa funções de gerador. O iterador da `Group`classe (do exercício no [capítulo 6](https://eloquentjavascript.net/06_object.html#group_iterator) ) pode ser escrito com este gerador:
+Escrever iteradores geralmente é muito mais fácil quando você usa funções de gerador. O iterador da `Group`classe (do exercício no [capítulo 6](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2006%20-%20A%20Vida%20Secreta%20dos%20Objetos.md) pode ser escrito com este gerador:
 
 ```js
 Group.prototype[Symbol.iterator] = function*() {
