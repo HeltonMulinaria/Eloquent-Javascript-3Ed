@@ -218,7 +218,7 @@ Para uma perspectiva mais agradável da simulação, você pode usar a `runRobot
 runRobotAnimation(VillageState.random(), randomRobot);
 ```
 
-A maneira como `runRobotAnimation`é implementada continuará sendo um mistério por enquanto, mas depois de ler os [capítulos posteriores](https://eloquentjavascript.net/14_dom.html) deste livro, que discutem a integração do JavaScript em navegadores da web, você poderá adivinhar como funciona.
+A maneira como `runRobotAnimation`é implementada continuará sendo um mistério por enquanto, mas depois de ler os [capítulos posteriores](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2014%20-%20O%20Modelo%20de%20Objeto%20do%20Documento.md) deste livro, que discutem a integração do JavaScript em navegadores da web, você poderá adivinhar como funciona.
 
 ## A rota do caminhão de correio
 
@@ -356,7 +356,7 @@ Uma solução possível seria calcular rotas para todos os pacotes e, em seguida
 
 A maioria das estruturas de dados fornecidas em um ambiente JavaScript padrão não é muito adequada para uso persistente. Matrizes têm métodos `slice`e `concat`permitem criar facilmente novas matrizes sem danificar a antiga. Mas `Set`, por exemplo, não possui métodos para criar um novo conjunto com um item adicionado ou removido.
 
-Escreva uma nova classe `PGroup`, semelhante à `Group`classe do [Capítulo 6](https://eloquentjavascript.net/06_object.html#groups) , que armazena um conjunto de valores. Como `Group`, ele tem `add`, `delete`e `has`métodos.
+Escreva uma nova classe `PGroup`, semelhante à `Group`classe do [Capítulo 6](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2006%20-%20A%20Vida%20Secreta%20dos%20Objetos.md#groups) , que armazena um conjunto de valores. Como `Group`, ele tem `add`, `delete`e `has`métodos.
 
 Seu `add`método, no entanto, deve retornar uma *nova* `PGroup` instância com o membro especificado adicionado e deixar a antiga inalterada. Da mesma forma, `delete`cria uma nova instância sem um determinado membro.
 

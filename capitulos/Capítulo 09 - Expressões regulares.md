@@ -86,7 +86,7 @@ console.log(dateTime.test("30-jan-2003 15:20"));
 // → false
 ```
 
-Parece completamente horrível, não é? Metade é de barras invertidas, produzindo um ruído de fundo que dificulta a identificação do padrão real expresso. Veremos uma versão ligeiramente melhorada dessa expressão [posteriormente](https://eloquentjavascript.net/09_regexp.html#date_regexp_counted) .
+Parece completamente horrível, não é? Metade é de barras invertidas, produzindo um ruído de fundo que dificulta a identificação do padrão real expresso. Veremos uma versão ligeiramente melhorada dessa expressão [posteriormente](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2009%20-%20Express%C3%B5es%20regulares.md#date_regexp_counted) .
 
 Esses códigos de barra invertida também podem ser usados dentro de colchetes. Por exemplo, `[\d.]`significa qualquer dígito ou caractere de ponto. Mas o próprio período, entre colchetes, perde seu significado especial. O mesmo vale para outros caracteres especiais, como `+`.
 
@@ -559,7 +559,7 @@ As regras exatas para esse formato (que é um formato amplamente usado, geralmen
 
 Nossa tarefa é converter uma string como esta em um objeto cujas propriedades contêm strings para configurações escritas antes do primeiro cabeçalho da seção e subobjetos para seções, com esses subobjetos mantendo as configurações da seção.
 
-Como o formato precisa ser processado linha por linha, dividir o arquivo em linhas separadas é um bom começo. Vimos o `split`método no [capítulo 4](https://eloquentjavascript.net/04_data.html#split) . Alguns sistemas operacionais, no entanto, usam não apenas um caractere de nova linha para separar linhas, mas um caractere de retorno de carro seguido por uma nova linha ( `"\r\n"`). Dado que o `split`método também permite uma expressão regular como argumento, podemos usar uma expressão regular como `/\r?\n/`dividir de uma maneira que permita ambas `"\n"`e `"\r\n"`entre linhas.
+Como o formato precisa ser processado linha por linha, dividir o arquivo em linhas separadas é um bom começo. Vimos o `split`método no [capítulo 4](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2004%20-%20Estruturas%20de%20dados%20objetos%20e%20matrizes.md#split) . Alguns sistemas operacionais, no entanto, usam não apenas um caractere de nova linha para separar linhas, mas um caractere de retorno de carro seguido por uma nova linha ( `"\r\n"`). Dado que o `split`método também permite uma expressão regular como argumento, podemos usar uma expressão regular como `/\r?\n/`dividir de uma maneira que permita ambas `"\n"`e `"\r\n"`entre linhas.
 
 ```js
 function parseINI(string) {
@@ -602,7 +602,7 @@ Devido à implementação simplista inicial do JavaScript e ao fato de que essa 
 
 Por um estranho acidente histórico, `\s`(espaço em branco) não apresenta esse problema e corresponde a todos os caracteres que o padrão Unicode considera espaço em branco, incluindo itens como o espaço não separável e o separador de vogal mongol.
 
-Outro problema é que, por padrão, expressões regulares funcionam em unidades de código, conforme discutido no [Capítulo 5](https://eloquentjavascript.net/05_higher_order.html#code_units) , não em caracteres reais. Isso significa que os caracteres compostos por duas unidades de código se comportam de maneira estranha.
+Outro problema é que, por padrão, expressões regulares funcionam em unidades de código, conforme discutido no [Capítulo 5](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2005%20-%20Fun%C3%A7%C3%B5es%20de%20ordem%20superior.md#code_units) , não em caracteres reais. Isso significa que os caracteres compostos por duas unidades de código se comportam de maneira estranha.
 
 ```js
 console.log(/🍎{3}/.test("🍎🍎🍎"));
@@ -682,7 +682,7 @@ Para cada um dos itens a seguir, escreva uma expressão regular para testar se a
 6. Uma palavra com mais de seis letras
 7. Uma palavra sem a letra *e* (ou *E* )
 
-Consulte a tabela no [resumo](https://eloquentjavascript.net/09_regexp.html#summary_regexp) do [capítulo](https://eloquentjavascript.net/09_regexp.html#summary_regexp) para obter ajuda. Teste cada solução com algumas seqüências de teste.
+Consulte a tabela no [resumo](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2009%20-%20Express%C3%B5es%20regulares.md#summary_regexp) do [capítulo](https://github.com/HeltonMulinaria/Eloquent-Javascript-3Ed/blob/master/capitulos/Cap%C3%ADtulo%2009%20-%20Express%C3%B5es%20regulares.md#summary_regexp) para obter ajuda. Teste cada solução com algumas seqüências de teste.
 
 ```js
 // Fill in the regular expressions
